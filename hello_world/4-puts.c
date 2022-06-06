@@ -1,8 +1,12 @@
 #include <stdio.h>
-/* Print a strin|g  */
+
+/**
+ * main - Entry point
+ * Return: Always 0
+ */
 int main(void)
 {
-	/* Use this */
+	/* Put */
 	puts("\"Programming is like building a multilingual puzzle"\n);
 	return (0);
 }
