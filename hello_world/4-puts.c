@@ -4,9 +4,9 @@
  * main - Entry point
  * Return: Always 0
  */
+
 int main(void)
 {
-	/* Put */
-	puts("\"Programming is like building a multilingual puzzle"\n);
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
-}
+	}
