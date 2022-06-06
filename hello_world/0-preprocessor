@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-# Preprocessor 
 gcc -E $CFILE -o c
