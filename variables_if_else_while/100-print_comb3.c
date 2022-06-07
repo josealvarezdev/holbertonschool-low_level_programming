@@ -19,6 +19,7 @@ if (a != i)
 	if (i != '8' && a != '9')
 	{
 		putchar(',');
+		putchar(' ');
 	}
 }
 }
