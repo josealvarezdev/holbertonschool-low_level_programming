@@ -14,7 +14,7 @@ for (a = i; a <= '9'; a++)
 {
 for (b = i; b <= '9'; b++)
 {
-if (i > a || a > b)
+if (b > a && a > i)
 {
 	putchar(i);
 	putchar(a);
