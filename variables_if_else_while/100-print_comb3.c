@@ -15,7 +15,7 @@ for (a = i; a <= '9'; a++)
 /*
  * Funciona parcialmente
 */
-if (a != i)
+if (a > i)
 {
 	putchar(i);
 	putchar(a);
