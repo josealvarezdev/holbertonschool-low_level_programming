@@ -6,29 +6,24 @@
 */
 int main(void)
 {
-int i, a, b, c;
+int num1, num2;
 
-for (i = '0'; i <= '9'; i++)
+for (num1 = '0'; num1 <= '99'; num1++)
 {
-for (a = i; a <= '9'; a++)
+for (num2 = '0'; num1 <= '99'; num2++)
 {
-for (b = i; b <= '9'; b++)
+if ( num1 < num2 && num1 != num2 )
 {
-for (c = i; c <= '9'; c++)
+putchar(num1/10);
+putchar(num1%10);
+putchar(' ');
+putchar(num2/10);
+putchar(num2%10);
+
+if (num1 != 98 || num2 != 99)
 {
-if (c > b && b > a && a > i)
-{
-	putchar(i);
-	putchar(a);
-	putchar(10);
-	putchar(b);
-	putchar(c);
-	if (i != '9' || a != '8' || b != '9' || c != '9')
-	{
-		putchar(',');
-		putchar(' ');
-	}
-}
+putchar(',');
+putchar(' ');
 }
 }
 }
