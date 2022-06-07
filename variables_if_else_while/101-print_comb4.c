@@ -14,11 +14,12 @@ for (a = i; a <= '9'; a++)
 {
 for (b = i; a <= '9'; b++)
 {
-if (a > i)
+if (a > i || i > b)
 {
 	putchar(i);
 	putchar(a);
-	if (i != '8' || a != '9')
+	putchar(b);
+	if (i != '7' || a != '8' || b != '9')
 	{
 		putchar(',');
 		putchar(' ');
