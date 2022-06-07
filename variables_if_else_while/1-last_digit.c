@@ -9,7 +9,6 @@
 
 /* more headers goes there */
 
-/st digit of %d is %d and is greater than 5", n, ld);* betty style doc for function main goes there */
 int main(void)
 {
 int n;
@@ -26,8 +25,7 @@ else if (n == 0)
 {
 	printf("Last digit of %d is %d and is 0", n, ld);
 }
-else if (n < 6 && n != 0)
-iinclude <stdlib.h>
+else if (n < 6 AND n != 0)
 {
 	printf("Last digit of %d is %d and is less than 6 and not 0");
 }
