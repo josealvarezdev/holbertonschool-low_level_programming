@@ -16,7 +16,7 @@ if (a > i)
 {
 	putchar(i);
 	putchar(a);
-	if (i != '8' && a != '9')
+	if (i != '8' || a != '9')
 	{
 		putchar(',');
 		putchar(' ');
