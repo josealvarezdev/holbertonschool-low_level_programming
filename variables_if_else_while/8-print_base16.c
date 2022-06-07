@@ -12,6 +12,6 @@ for (a = 0; a <= 16; ++a)
 {
 	putchar(a);
 }
-	putchar('\n';)
+	putchar('\n');
 return (0);
 }
