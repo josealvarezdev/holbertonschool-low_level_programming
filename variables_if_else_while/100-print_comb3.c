@@ -17,7 +17,7 @@ if (a != i)
 	putchar(i);
 	putchar(a);
 }
- putchar(',');
+putchar(',');
 }
 }
 return (0);
