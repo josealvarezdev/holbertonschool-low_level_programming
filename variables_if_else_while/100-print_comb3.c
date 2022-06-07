@@ -19,4 +19,5 @@ if (a != i)
 	putchar(',');
 }
 }
+}
 return (0);
