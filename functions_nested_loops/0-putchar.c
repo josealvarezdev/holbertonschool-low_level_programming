@@ -1,7 +1,7 @@
 #include <stdio.h>
 /*
- * Main
- * Return 0
+ * Main - Task 0
+ * Return Always 0
 */
 int main(void)
 /*
