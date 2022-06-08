@@ -1,7 +1,8 @@
 #include <stdio.h>
-/*
- * Main - Task 
- * Return Always 
+/**
+ *  *  *  * main - Prints _putchar
+ *   *   *   *
+ *    *    *    * Return: Always
 */
 int main(void)
 /*
