@@ -6,8 +6,8 @@
 */
 int main(void)
 {
-	int count
-	char alphabet
+	int count;
+	char alphabet;
 	void print_alphabet(void)
 	{
 		for (count = 0; count <= 10; count++)
