@@ -12,5 +12,6 @@ void print_alphabet(void)
 	{
 	_puthcar(alphabet);
 	}
+	_putchar(10);
 	return (0);
 }
