@@ -6,6 +6,11 @@
 */
 void print_alphabet(void)
 {
-	print_alphabet(1);
+	int alphabet;
+
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	{
+	_puthcar(alphabet);
+	}
 	return (0);
 }
