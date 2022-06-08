@@ -3,9 +3,10 @@
  * Main
  * Return 0
 */
-int main (void)
+int main(void)
 {
-char a
-a = "\_putchar"
-putchar(a);
+char a;
+a = "_putchar";
+print("%s", a);
+return (0);
 }
