@@ -5,8 +5,13 @@
 */
 int main(void)
 {
-char a;
-a == "_putchar";
-print("%s", a);
-return (0);
+int c;
+
+c = getchar();
+while (c != EOF) {
+	    putchar(c);
+	        c = getchar();
+
+}
+putchar(str(c)+"\n");
 }
