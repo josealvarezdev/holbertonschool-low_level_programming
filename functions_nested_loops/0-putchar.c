@@ -1,21 +1,20 @@
-#include <stdio.h>
 #include "main.h"
 /**
- *  *  *  * main - Prints _putchar
- *   *   *   *
- *    *    *    * Return: Always
-*/
+ *  * main - Prints a string with putchars
+ *   *
+ *    * Return: Always 0
+ *     */
+
 int main(void)
-/*
- * This program print _putchar with a library _putchar.h
-*/
 {
-_putchar ('_');
-_putchar ('p');
-_putchar ('u');
-_putchar ('t');
-_putchar ('c');
-_putchar ('a');
-_putchar ('r');
-return (0);
+	putchar('_');
+	putchar('p');
+	putchar('u');
+	putchar('t');
+	putchar('c');
+	putchar('h');
+	putchar('a');
+	putchar('r');
+	putchar('\n');
+	return(0);
 }
