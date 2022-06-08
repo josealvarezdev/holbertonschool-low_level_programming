@@ -6,7 +6,7 @@
 int main(void)
 {
 char a;
-a = "_putchar";
+a == "_putchar";
 print("%s", a);
 return (0);
 }
