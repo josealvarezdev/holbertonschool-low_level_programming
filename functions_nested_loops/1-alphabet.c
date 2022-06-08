@@ -10,7 +10,7 @@ void print_alphabet(void)
 
 	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
-	_puthcar(alphabet);
+	puthcar(alphabet);
 	}
 	return (0);
 }
