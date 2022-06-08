@@ -6,8 +6,6 @@
 int main (void)
 {
 char a
-while((a=_putchar()));
-{
+a = "\_putchar"
 putchar(a);
-}
 }
