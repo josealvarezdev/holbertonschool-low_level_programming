@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *  *  * print_sign - write a function 
+ *  *  * print_sign - write a function
  *   *   * @n: - is a variable dou
  *    *    * Return: 1 if c is a letter, lowercase or uppercase
 */
