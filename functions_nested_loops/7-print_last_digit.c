@@ -4,7 +4,7 @@
  *   *   * @r: - is a variable dou
  *    *    * Return: last digit of r
 */
-int print_last_digit(int r);
+int print_last_digit(int r)
 {
 _putchar (r % 10)
 return (r);
