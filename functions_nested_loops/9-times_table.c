@@ -14,7 +14,7 @@ for (fila = 0; fila <= 9; fila++)
 {
 num = col * fila;
 _putchar (num + '0');
-if (num != col == 9)
+if (num != 9)
 _putchar(',');
 _putchar(' ');
 }
