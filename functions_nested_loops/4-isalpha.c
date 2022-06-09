@@ -2,7 +2,7 @@
 
 /**
  *  * _isalpha - write a function that checks for alphabetic character
- *   *
+ *   * c - is a variable dou
  *    * Return: 1 if c is a letter, lowercase or uppercase
 */
 int _isalpha(int c)
