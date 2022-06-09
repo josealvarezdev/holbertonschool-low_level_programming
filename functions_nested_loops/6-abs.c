@@ -4,8 +4,8 @@
  *   *   * @c: - is a variable dou
  *    *    * Return: 1 if c is a letter, lowercase or uppercase
 */
-int _abs(int r);
-
+int _abs(int r)
+{
 if (r>=0)
 {
 return (r);
@@ -13,4 +13,5 @@ return (r);
 else
 {
 return (-r);
+}
 }
