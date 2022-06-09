@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- *  *  * print_last_digit - of a number
- *   *   * @r: - is a variable dou
+ *  *  * jack_bauer - lalala
+ *   *   * @num1: - is a variable dou
+ *    @num2: - is a variable
  *    *    * Return: last digit of r
 */
 void jack_bauer(void)
