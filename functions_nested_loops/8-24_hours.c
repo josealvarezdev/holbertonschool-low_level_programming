@@ -24,6 +24,5 @@ for (num1 = 0; num1 <= 23; num1++)
 	}
 }
 _putchar('\n');
-return (0);
-}i
+}
 }
