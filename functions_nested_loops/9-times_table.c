@@ -18,7 +18,9 @@ if (num != fila * 9)
 {
 _putchar (',');
 _putchar (' ');
-_putchar (10);
+/*
+ * _putchar (10);
+*/
 }
 }
 }
