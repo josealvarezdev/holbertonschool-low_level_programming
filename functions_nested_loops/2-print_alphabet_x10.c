@@ -4,22 +4,17 @@
  *   *
  *    * Return: Always 0.
 */
-int main(void)
+void print_alphabet(void)
 {
-	int count;
-	char alphabet;
-	void print_alphabet(void)
+int count;
+char alphabet;
+for (count = 0; count <= 10; count++)
+{
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
-		for (count = 0; count <= 10; count++)
-		{
-			for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
-			{
-				_putchar(alphabet);
-			}
-		}
-
-
+		_putchar(alphabet);
 	}
+}
 	_putchar(10);
 	return (0);
 }
