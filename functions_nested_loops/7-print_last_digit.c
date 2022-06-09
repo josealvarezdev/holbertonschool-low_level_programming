@@ -13,5 +13,5 @@ if (last < 0)
 last = -last;
 }
 _putchar (last + '0');
-return (r);
+return (last);
 }
