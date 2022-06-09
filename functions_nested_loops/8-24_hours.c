@@ -16,6 +16,7 @@ for (num1 = 0; num1 <= 23; num1++)
 		_putchar(':');
 		_putchar((num2 / 10) + '0');
 		_putchar((num2 % 10) + '0');
+		_putchar(10);
 		/*if (num1 != 23 || num2 != 59)
 		{
 			_putchar(',');
@@ -23,5 +24,4 @@ for (num1 = 0; num1 <= 23; num1++)
 		} */
 	}
 }
-_putchar('\n');
 }
