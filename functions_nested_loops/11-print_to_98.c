@@ -3,12 +3,12 @@
 
 void print_to_98(int n)
 {	
-	if (n < 98 && n != 98)
+	if (n < 98 && n != 99)
 	{
 	printf("%d", n);
 	n++;
 	}
-	else if (n > 98 && n != 98 )
+	else if (n > 98 && n != 97 )
 	{
 		printf("%d", n);
 		n--;
