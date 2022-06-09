@@ -16,8 +16,9 @@ num = col * fila;
 _putchar (num + '0');
 if (num != fila * 9)
 {
-_putchar(',');
-_putchar(' ');
+_putchar (',');
+_putchar (' ');
+_putchar (10);
 }
 }
 }
