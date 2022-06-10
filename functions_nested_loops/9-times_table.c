@@ -24,7 +24,7 @@ num = 0;
 		{
 			_putchar(' ');
 		}
-		_putchar(num%10);
+		_putchar((num % 10) + '0');
 }
 }
 }
