@@ -11,15 +11,19 @@ num = 0;
 	for (fila = 0; fila <= 9; fila++)
 	{
 		_putchar(num);
-		for (col = 0; col <= 9; col++)
+		_putchar(',');
+		_putchar(' ');
+		for (col = 1; col <= 9; col++)
 		{
 			num = col * fila;
-			_putchar (num + '0');
-		if (num != fila * 9)
+		if ((num / 10) != 0)
 		{
-			_putchar (',');
-			_putchar (' ');
-}
+			_putchar ((num / 10) + '0');
+		}
+		else
+		{
+			_putchar(' ');
+		}
 }
 }
 }
