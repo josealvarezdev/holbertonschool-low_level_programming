@@ -15,16 +15,21 @@ int col, fila, num;
 		for (col = 1; col <= 9; col++)
 		{
 			num = col * fila;
-		if ((num / 10) != 0)
-		{
-			_putchar ((num / 10) + '0');
+			if ((num / 10) != 0)
+			{
+				_putchar ((num / 10) + '0');
+			}
+			else
+			{
+				_putchar(' ');
+			}
+			_putchar((num % 10) + '0');
+			if (col != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}	
 		}
-		else
-		{
-			_putchar(' ');
-		}
-		_putchar((num % 10) + '0');
-}
-_putchar(10);
-}
+	_putchar(10);
+	}
 }
