@@ -6,10 +6,10 @@
 void times_table(void)
 {
 int col, fila, num;
-
+num = 0;
 	for (fila = 0; fila <= 9; fila++)
 	{
-		_putchar(num + '0');
+		_putchar(num +'0');
 		_putchar(',');
 		_putchar(' ');
 		for (col = 1; col <= 9; col++)
@@ -28,7 +28,7 @@ int col, fila, num;
 			{
 				_putchar(',');
 				_putchar(' ');
-			}	
+			}
 		}
 	_putchar(10);
 	}
