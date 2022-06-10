@@ -1,6 +1,10 @@
 #include "main.h"
 #include <stdio.h>
-
+/*
+ * print_to_98 - Print to n98
+ * Return: Algo
+ * @n: Variable
+*/
 void print_to_98(int n)
 {
 	while (n >= 98)
