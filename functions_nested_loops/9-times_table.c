@@ -9,7 +9,7 @@ int col, fila, num;
 
 	for (fila = 0; fila <= 9; fila++)
 	{
-		_putchar(num);
+		_putchar(num + '0');
 		_putchar(',');
 		_putchar(' ');
 		for (col = 1; col <= 9; col++)
