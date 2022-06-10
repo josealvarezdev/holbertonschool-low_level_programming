@@ -4,11 +4,11 @@
 */
 void print_numbers(void)
 {
-int c;
+int numerito;
 
-for (c = '0'; c <= '9'; c++)
+for (numerito = '0'; numerito <= '9'; numerito++)
 {
-_putchar(c + '0');
+_putchar(numerito + '0');
 }
 _putchar(10);
 }
