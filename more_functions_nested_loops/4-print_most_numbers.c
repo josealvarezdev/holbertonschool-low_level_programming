@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- * print_most_numbers - Hola
+ * print_most_numbers - Funcion imprime
  * @c: Variable who print the string 01356789
  * Return: no exist
 */
