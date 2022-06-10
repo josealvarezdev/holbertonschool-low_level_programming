@@ -1,5 +1,9 @@
 #include "main.h"
-
+/*
+ * print_most_numbers
+ * @c: Variable who print the string 01356789
+ * Return: no exist
+*/
 void print_most_numbers(void)
 {
 	int c;
