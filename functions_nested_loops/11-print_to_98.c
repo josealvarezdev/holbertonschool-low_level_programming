@@ -1,10 +1,11 @@
 #include "main.h"
 #include <stdio.h>
-/*
- * print_to_98 - Print to n98
- * Return: Algo
- * @n: Variable
+/**
+ *  * print_to_98 - print all natural numbers
+ *   * followed by a new line
+ *    * @n: print from this number
 */
+
 void print_to_98(int n)
 {
 	while (n >= 98)
