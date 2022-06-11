@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- *	more_numbers - This function print 0 to 14 and a new line when that function finish.
- * 	Return: Return void
+ *	more_numbers - This function print 0 to 14 and a new line
+ *	Return: Return void
 */
 void more_numbers(void)
 {
 	int a, count;
+
 	for (count = 0; count <= 10; count++)
 	{
 	for (a = 0; a <= 14; a++)
