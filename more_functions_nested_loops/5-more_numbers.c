@@ -9,9 +9,11 @@ void more_numbers(void)
 
 	for (count = 0; count <= 10; count++)
 	{
-	for (a = 48; a <= 4952; a++)
+	for (a = 48; a <= 14; a++)
 	{
-		_putchar(a + '0');
+		if (a > 9)
+		_putchar((a/10) + '0');
+		_putchar((a%10) + '0');
 	}
 	_putchar('\n');
 	}
