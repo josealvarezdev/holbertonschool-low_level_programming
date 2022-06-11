@@ -2,7 +2,7 @@
 
 void print_diagonal(int n)
 {
-int a, b;
+int a;
 
 if (n > 0)
 {
