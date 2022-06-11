@@ -1,5 +1,8 @@
 #include "main.h"
-
+/**
+ *	more_numbers - This function print 0 to 14 and a new line when that function finish.
+ * 	Return: Return void
+*/
 void more_numbers(void)
 {
 	int a;
