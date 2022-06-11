@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- * print_lines - write lines N times
+ * print_line - write lines N times
  * @n: number of time to print _
  *
 */
