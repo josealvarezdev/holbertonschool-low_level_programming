@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * int main - function of print fizzbuzz test
+ * Return: Always return 0
 */
 int main(void)
 {
