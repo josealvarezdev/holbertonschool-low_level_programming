@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * int main - function of print fizzbuzz test
+ * main - function of print fizzbuzz test
  * Return: Always return 0
 */
-int main(void)
+int main (void)
 {
 char count;
 
