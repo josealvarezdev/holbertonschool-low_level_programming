@@ -7,7 +7,7 @@ int main(void)
 {
 char count;
 
-for (count = 1; count < 100; count++)
+for (count = 1; count <= 100; count++)
 {
 	if ((count % 5 == 0) && (count % 3 == 0))
 	{
@@ -30,6 +30,6 @@ if (count <= 99)
 putchar(' ');
 }
 }
-printf ("Buzz\n");
+printf ("\n");
 return (0);
 }
