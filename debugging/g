@@ -1,5 +1,5 @@
 #!/bin/bash
 chmod +x *
 git add .
-git commit -m "More nested loops"
+git commit -m "Debugging"
 git push
