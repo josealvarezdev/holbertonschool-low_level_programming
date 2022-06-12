@@ -17,7 +17,7 @@ for (a = 0; a < size; a++)
 	{
 		_putchar(35);
 	}
-	_putchar(10);
+_putchar(10);
 }
-
+}
 	
