@@ -27,6 +27,6 @@ for (count = 1; count < 100; count++)
 		putchar(' ');
 	}
 }
-putchar ("Buzz\n");
+printf ("Buzz\n");
 return (0);
 }
