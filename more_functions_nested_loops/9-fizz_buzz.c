@@ -11,4 +11,5 @@ else if (count % 3)
 	printf("Fizz");
 else if (count % 5)
 	printf("Buzz");
+return(0);
 }
