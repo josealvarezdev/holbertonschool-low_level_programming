@@ -13,7 +13,7 @@ else if ((count % 5) == 0)
 	printf("Buzz ");
 else
 {
-	printf(%d, count);
+	printf("%d", count);
 }
 printf('\n');
 return(0);
