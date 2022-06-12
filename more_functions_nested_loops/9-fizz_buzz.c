@@ -3,7 +3,7 @@
  * main - function of print fizzbuzz test
  * Return: Always return 0
 */
-int main (void)
+int main(void)
 {
 char count;
 
@@ -30,6 +30,6 @@ if (count <= 99)
 putchar(' ');
 }
 }
-printf ("\n");
+printf("\n");
 return (0);
 }
