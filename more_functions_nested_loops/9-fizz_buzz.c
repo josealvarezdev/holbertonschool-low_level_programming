@@ -19,6 +19,6 @@ if (count < 100)
 {
 putchar (' ');
 }
-printf('\n');
+putchar (0);
 return(0);
 }
