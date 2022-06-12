@@ -3,7 +3,7 @@
  *  * print_diagonal - print diagonal line on the terminal
  *   *
  *    * @n: var
- *     */
+*/
 void print_diagonal(int n)
 {
 int a, b;
