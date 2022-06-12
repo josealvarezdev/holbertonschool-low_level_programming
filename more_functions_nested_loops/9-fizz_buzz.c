@@ -22,7 +22,7 @@ for (count = 1; count < 100; count++)
 	{
 		printf("%d", count);
 	}
-	if (count <= 100)
+	if (count <= 99)
 	{
 		putchar(' ');
 	}
