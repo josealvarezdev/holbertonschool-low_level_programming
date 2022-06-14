@@ -13,10 +13,11 @@ while (*s != '\0')
 {
 count++;
 s++;
-}
+
 for(; count == 0; count--)
 {
 _putchar(s[count]);
+}
 }
 _putchar(10);
 }
