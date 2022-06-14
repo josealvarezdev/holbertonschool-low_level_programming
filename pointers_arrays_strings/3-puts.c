@@ -6,7 +6,7 @@
 */
 void _puts(char *str)
 {
-int counti = 0;
+int count = 0;
 
 while (str[count] != '\0')
 {
