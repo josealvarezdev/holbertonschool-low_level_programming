@@ -1,0 +1,2 @@
+Pointers isnt fun :D
+
