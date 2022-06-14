@@ -10,9 +10,8 @@ int count;
 count = 0;
 while (*s != '\0')
 	{
-	_putchar(s[0]);
 	count++;
-	s++
+	s++;
 	}
 return (count);
 }
