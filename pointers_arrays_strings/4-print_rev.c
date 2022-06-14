@@ -20,7 +20,7 @@ _putchar(s[count]);
 }*/
 while (count != 0)
 {
-_putchar(s[count];)
+_putchar(s[count])
 }
 _putchar(10);
 }
