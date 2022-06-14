@@ -18,7 +18,7 @@ s++;
 end = count -1;
  for (begin = 0; begin < count; begin++)
 {
-r[begin] = s[end];
+s[begin] = r[end];
 end--;
 }
 r[begin] = '\0';
