@@ -18,7 +18,6 @@ s++;
 {
 _putchar(s[count]);
 }*/
-count = count-1;
 while (count != 0)
 {
 _putchar(s[count]);
