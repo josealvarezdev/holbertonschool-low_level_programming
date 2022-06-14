@@ -8,7 +8,7 @@ void rev_string(char *s)
 {
 int count = 0;
 int end, begin;
-int r[64];
+char temporal;
 count = 0;
 while (*s != '\0')
 {
@@ -16,11 +16,11 @@ count++;
 s++;
 }
 end = count -1;
- for (begin = 0; begin < count; begin++)
+for (begin = 0; begin < end; begin++)
 {
-s[begin] = r[end];
+temporal = s[begin]
+s[begin] = s[end]
+s[end] = s[temp]
 end--;
 }
-r[begin] = '\0';
-_putchar(r[begin]);
 }
