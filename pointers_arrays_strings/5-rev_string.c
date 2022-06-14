@@ -20,7 +20,7 @@ for (begin = 0; begin < end; begin++)
 {
 temporal = s[begin];
 s[begin] = s[end];
-s[end] = s[temp];
+s[end] = s[temporal];
 end--;
 }
 }
