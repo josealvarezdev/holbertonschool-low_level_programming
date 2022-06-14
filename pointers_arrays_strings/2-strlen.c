@@ -4,7 +4,7 @@
  * @s: is a value
  * Return: Void
 */
-void int _strlen(char *s)
+int _strlen(char *s)
 {
 int count;
 count = 0
