@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _puts - print array
- * @s: is a value
+ * @str: array char
  * Return: Void
 */
 void _puts(char *str)
