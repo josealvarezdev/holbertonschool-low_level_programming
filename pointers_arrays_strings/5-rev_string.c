@@ -23,5 +23,4 @@ end--;
 }
 r[begin] = '\0';
 _putchar(r[begin]);
-return (0);
 }
