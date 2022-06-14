@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * _puts - print array
- * @str: array char
+ * print_rev - print reverse
+ * @s: array char
  * Return: Void
 */
 void print_rev(char *s)
