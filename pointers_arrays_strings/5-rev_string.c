@@ -18,9 +18,9 @@ s++;
 end = count -1;
 for (begin = 0; begin < end; begin++)
 {
-temporal = s[begin]
-s[begin] = s[end]
-s[end] = s[temp]
+temporal = s[begin];
+s[begin] = s[end];
+s[end] = s[temp];
 end--;
 }
 }
