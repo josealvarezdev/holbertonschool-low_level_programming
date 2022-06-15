@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * puts2
- * str: var
+ * puts2 - Function which print %2 charracters
+ * *str: var
  * Return: Nothing
 */
 void puts2(char *str)
