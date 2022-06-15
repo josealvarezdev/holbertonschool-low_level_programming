@@ -21,6 +21,7 @@ half = count / 2;
 	_putchar(str[half]);
 	half++;
 	}
+}
 else
 {
 half = (count / 2) +1;
@@ -28,7 +29,6 @@ while (str[half] != 0)
 {
 _putchar(str[half]);
 half++
-}
 }
 }
 _putchar(10);
