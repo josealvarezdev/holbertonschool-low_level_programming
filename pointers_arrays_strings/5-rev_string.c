@@ -16,11 +16,10 @@ count++;
 s++;
 }
 end = count -1;
-for (begin = 0; begin < end; begin++)
+for (begin = 0; begin < (count/2); begin++)
 {
 temporal = s[begin];
 s[begin] = s[end];
-s[end] = s[temporal];
-end--;
+s[end - begin] = temporal;
 }
 }
