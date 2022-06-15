@@ -1,12 +1,16 @@
 #include "main.h"
-
+/**
+ * puts_half - puts the half of array
+ * @str: var array
+ * Return: Nothing
+*/
 void puts_half(char *str)
 {
 int count = 0;
 int half;
 while (str[count] != '\0')
 	{
-	count++
+	count++;
 	}
 half = count / 2;
 	while (str[half] != '\0')
@@ -15,6 +19,5 @@ half = count / 2;
 	str++;
 	half++;
 	}
-
 }
 
