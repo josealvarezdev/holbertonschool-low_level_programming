@@ -1,5 +1,4 @@
 #include "main.h"
-// Comentar
 void puts2(char *str)
 {
 	int count;
