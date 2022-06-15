@@ -20,6 +20,6 @@ for (begin = 0; begin < (count/2); begin++)
 {
 temporal = s[begin];
 s[begin] = s[end];
-s[end - begin] = temporal;
+s[end] = temporal;
 }
 }
