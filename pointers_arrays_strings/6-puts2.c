@@ -1,7 +1,7 @@
 #include "main.h"
 void puts2(char *str)
 {
-	int count;
+	int count = 0;
 
 	while (str[count] != '\0')
 	{
