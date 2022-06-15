@@ -14,7 +14,7 @@ while (str[count] != '\0')
 	}
 if ((count % 2) == 0)
 {
-half = (count / 2;
+half = count / 2;
 }
 	while (str[half] != '\0')
 	{
@@ -32,4 +32,3 @@ half++
 }
 _putchar(10);
 }
-
