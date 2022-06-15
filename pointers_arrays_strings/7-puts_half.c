@@ -16,8 +16,8 @@ half = count / 2;
 	while (str[half] != '\0')
 	{
 	_putchar(str[half]);
-	str++;
 	half++;
 	}
+_putchar(10);
 }
 
