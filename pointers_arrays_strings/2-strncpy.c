@@ -1,7 +1,13 @@
 #include "main.h"
 #include <string.h>
 #include <stdio.h>
-
+/**
+ * _strncpy - strncpy function
+ * @dest: destino
+ * @src: origen
+ * @n: var
+ * Return: Destino
+*/
 char *_strncpy(char *dest, char *src, int n)
 {
 int i;
