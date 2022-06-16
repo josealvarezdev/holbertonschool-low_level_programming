@@ -12,12 +12,12 @@ void print_array(int *a, int n)
 
 	while (a[count] != '\0')
 	{
-		if(count <= n)
+		if (count <= n)
 		{
 		printf("%d", a[count]);
 		count++;
 		}
-		if (n > 0)
+		while (count != n)
 		{
 		printf(", ");
 		}
