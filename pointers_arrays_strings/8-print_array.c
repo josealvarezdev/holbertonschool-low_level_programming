@@ -15,6 +15,7 @@ void print_array(int *a, int n)
 		if (count == (n - 1))
 		{
 		printf("%d", a[count]);
+		_putchar(10);
 		}
 		else
 		{
