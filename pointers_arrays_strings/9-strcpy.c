@@ -5,6 +5,7 @@
  * @dest: destino de copia
  * @src: original
  * Return: 0;
+*/
 char *_strcpy(char *dest, char *src)
 {
 	int count = 0;
