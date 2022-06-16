@@ -5,7 +5,8 @@
  * _strncat - fun that concatenates two strings
  * @dest: destino
  * @src: original
- * n: var
+ * @n: var
+ * Return: Destino
 */
 char *_strncat(char *dest, char *src, int n)
 {
