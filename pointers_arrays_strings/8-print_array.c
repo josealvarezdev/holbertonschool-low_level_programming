@@ -13,8 +13,12 @@ void print_array(int *a, int n)
 	{
 		if(count <= n)
 		{
-		_putchar(a[count]);
+		printf("%d", a[count]);
 		count++;
+		}
+		if (n > 0)
+		{
+		printf(", ");
 		}
 	}
 	_putchar(10);
