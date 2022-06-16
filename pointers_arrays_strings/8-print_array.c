@@ -9,7 +9,7 @@ void print_array(int *a, int n)
 {
 	int count = 0;
 
-	while (a[count] != '\0)
+	while (a[count] != '\0')
 	{
 		if(count <= 0)
 		{
