@@ -9,10 +9,13 @@ void print_array(int *a, int n)
 {
 	int count = 0;
 
-	while (a[count] != '\0' || count <= n)
+	while (a[count] != '\0)
 	{
+		if(count <= 0)
+		{
 		_putchar(a[count]);
 		count++;
+		}
 	}
 	_putchar(10);
 }
