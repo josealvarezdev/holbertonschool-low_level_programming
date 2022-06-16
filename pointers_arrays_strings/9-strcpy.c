@@ -3,12 +3,15 @@
 
 char *_strcpy(char *dest, char *src)
 {
+	int count = 0;
 if (!src || !dest)
 {
 	return(0);
 }
-for (src[0]; src <= '\0'; src++)
+while (src[count] <= '\0')
 {
-*dest = *src;
+dest[count] = src[count];
+count++;
 }
+return(dest);
 }
