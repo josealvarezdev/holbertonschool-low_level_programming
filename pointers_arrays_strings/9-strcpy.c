@@ -8,7 +8,7 @@ if (!src || !dest)
 {
 	return(0);
 }
-while (src[count] <= '\0')
+while (src[count] != '\0')
 {
 dest[count] = src[count];
 count++;
