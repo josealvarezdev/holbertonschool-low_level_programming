@@ -1,6 +1,10 @@
 #include "main.h"
 #include <string.h>
-
+/**
+ * string_toupper
+ * @a: array definido
+ * Return: array con uppercase
+*/
 char *string_toupper(char *a)
 {
 int i = 0;
@@ -12,4 +16,5 @@ int i = 0;
 		}
 	i++;
 	}
+return(*a);
 }
