@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * string_toupper
+ * string_toupper - string in uppercase
  * @a: array definido
  * Return: array con uppercase
 */
@@ -16,5 +16,5 @@ int i = 0;
 		}
 	i++;
 	}
-return(a);
+return (a);
 }
