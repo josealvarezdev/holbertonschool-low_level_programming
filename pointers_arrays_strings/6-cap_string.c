@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 
-char *cap_string(char *)
+char *cap_string(char *a)
 {
 int b[13] = {' ', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 int i = 0;
