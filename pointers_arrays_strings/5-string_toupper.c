@@ -16,5 +16,5 @@ int i = 0;
 		}
 	i++;
 	}
-return(*a);
+return(a);
 }
