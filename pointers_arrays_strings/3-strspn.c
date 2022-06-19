@@ -18,6 +18,10 @@ unsigned int i, j;
 			break;
 			}
 		}
+			if (!accept[j])
+			{
+			break;
+			}
 	}
 return (i);
 }
