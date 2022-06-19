@@ -3,18 +3,22 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-int i, j;
-char *n = NULL;
+int i, j, pos;
 
-	for (j = 0; haystack[j]; j++)	
+	for (i = 0; haystack[i]; i++)
 	{
-		for (i = 0; needle[i]; i++)
+		if (haystack[i] == needle[0])
 		{
-			if (haystack[j] == needle[i] && *haystack != '\0')
+			pos = i;
+			for (j = 0; needle[j]; j++)
 			{
-			return (haystack + j);
+				if (needle[j + 1] == NULL)
+				{
+					return (&haystack[pos]);
+				}
+			pos++;
 			}
 		}
 	}
-return (n);
+return (0);
 }
