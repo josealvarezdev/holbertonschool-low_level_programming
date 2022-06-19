@@ -14,7 +14,7 @@ int flag = 0;
 	{
 		for (j = 0; j < 13; j++)
 		{
-			if (a[i - 1] == sep[j])
+			if (a[i - 1] == b[j])
 			{
 				flag = 1;
 				break;
