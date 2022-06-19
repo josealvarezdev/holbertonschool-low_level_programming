@@ -8,22 +8,32 @@ char b[] = ",;.!?(){}\n\t\" ";
 int i = 0;
 int j = 0;
 
-for (; a[i] != '\0'; i++)
-{
-	if (a[0] >= 'a' && a[0] <= 'z')
+int flag = 0;
+
+	for (i = 0; a[i] != '\0'; i++)
 	{
-		a[0] = a[0] - 32;
-	}
-	if (a[i] >= 'a' && a[i] <= 'z')
-	{
-		for(; b[j] != '\0'; j++)
+		for (j = 0; j < 13; j++)
 		{
-			if (b[j] == a[i])
+			if (a[i - 1] == sep[j])
 			{
-				a[i + 1] = a[i + 1] - 32;
+				flag = 1;
+				break;
 			}
 		}
+		if (((i == 0) || (flag == 1)) && ((a[i] > 96) && (a[i] < 123)))
+		{
+			a[i] = a[i] - 32;
+			flag = 0;
+		}
+		else if ((flag == 1) && ((a[i] > 64) && (a[i] < 91)))
+		{
+			flag = 0;
+		}
+		else if ((flag == 1) && ((a[i] > 47) && (a[i] < 58)))
+		{
+			flag = 0;
+		}
 	}
-}
-return (a);
+
+	return (a);
 }
