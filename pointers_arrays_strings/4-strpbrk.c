@@ -23,5 +23,5 @@ int i, j;
 	break;
 	}
 	}
-return (*s[i]);
+return (s[i]);
 }
