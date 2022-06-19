@@ -9,7 +9,7 @@ char *_strpbrk(char *s, char *accept)
 {
 	if (!s)
 	{
-		return (1);
+		return;
 	}
 int i, j;
 
