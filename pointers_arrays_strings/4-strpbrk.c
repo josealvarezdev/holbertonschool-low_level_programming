@@ -7,6 +7,10 @@
 */
 char *_strpbrk(char *s, char *accept)
 {
+	if (!s)
+	{
+		return (1);
+	}
 int i, j;
 
 	for (i = 0; s[i]; i++)
