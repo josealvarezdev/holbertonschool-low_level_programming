@@ -4,14 +4,18 @@
 char *_strstr(char *haystack, char *needle)
 {
 int i;
+char *p;
 
-	for (i = 0; haystack[i] >= 0; i++)
+	while (*haystack)
 	{
-		if (haystack[i] == needle)
+		for (i = 0; needle[i]; i++)
 		{
-			return (haystack + i);
+			if (*haystack == needle[i] && *haystack != '\0')
+			{
+			p = *haystack;	
+			return (p)
+			}
 		}
+	haystack++;
 	}
-return (0);
-}
 }
