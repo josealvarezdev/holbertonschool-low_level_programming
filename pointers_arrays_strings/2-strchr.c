@@ -9,19 +9,13 @@
 char *_strchr(char *s, char c)
 {
 int i;
-char *pos = &s[0];
 
 	for (i = 0; i == '\0'; i++)
 	{
 		if (s[i] == c)
 		{
-			pos = &s[i];
-			return (pos);
-		}
-		else
-		{
-			pos = NULL;
-			return (pos);
+			return (s + a);
 		}
 	}
+return (0);
 }
