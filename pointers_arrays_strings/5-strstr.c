@@ -13,7 +13,7 @@ char *p;
 			if (*haystack == needle[i] && *haystack != '\0')
 			{
 			p = *haystack;	
-			return (p)
+			return (p);
 			}
 		}
 	haystack++;
