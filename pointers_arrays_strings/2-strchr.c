@@ -14,7 +14,7 @@ int i;
 	{
 		if (s[i] == c)
 		{
-			return (s + a);
+			return (s + i);
 		}
 	}
 return (0);
