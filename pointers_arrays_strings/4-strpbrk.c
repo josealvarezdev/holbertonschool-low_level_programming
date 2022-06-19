@@ -9,11 +9,12 @@
 char *_strpbrk(char *s, char *accept)
 {
 char *n = NULL;
+int i, j;
+
 	if (!s)
 	{
 		return (n);
 	}
-int i, j;
 
 	for (i = 0; s[i]; i++)
 	{
