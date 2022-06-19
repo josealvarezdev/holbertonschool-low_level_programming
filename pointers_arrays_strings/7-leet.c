@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ * leet - 1337
+ * @a: array to change
+ * Return: a
+*/
 char *leet(char *a)
 {
 int i,j;
