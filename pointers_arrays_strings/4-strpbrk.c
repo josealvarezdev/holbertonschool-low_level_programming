@@ -14,7 +14,7 @@ int i, j;
 	{
 		for (j = 0; accept[j]; j++)
 		{
-			if (*s == accept[j])
+			if (s[i] == accept[j])
 			{
 				return (s + i);
 			}
