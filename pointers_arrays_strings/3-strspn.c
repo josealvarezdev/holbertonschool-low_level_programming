@@ -15,13 +15,13 @@ unsigned int i, j;
 		{
 			if (s[i] == accept[j])
 			{
-			break;
+				break;
 			}
 		}
-			if (!accept[j])
-			{
-			break;
-			}
+	if (!accept[j])
+	{
+		break;
+	}
 	}
 return (i);
 }

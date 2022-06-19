@@ -13,15 +13,11 @@ int i, j;
 	{
 		for (j = 0; accept[j]; j++)
 		{
-			if (s[i] == accept[j])
+			if (*s == accept[j])
 			{
-				break;
+				return (s);
 			}
 		}
-	if (!accept[j])
-	{
-	break;
+return (0); //Algo para que no crashee
 	}
-	}
-return (s[i]);
 }
