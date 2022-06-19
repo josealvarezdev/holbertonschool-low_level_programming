@@ -4,6 +4,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 int i, j;
+char *n = NULL;
 
 	for (j = 0; haystack[j]; j++)	
 	{
@@ -15,4 +16,5 @@ int i, j;
 			}
 		}
 	}
+return (n);
 }
