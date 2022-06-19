@@ -12,7 +12,7 @@ int i, j, pos;
 			pos = i;
 			for (j = 0; needle[j]; j++)
 			{
-				if (needle[j + 1] == NULL)
+				if (needle[j + 1] == '\0')
 				{
 					return (&haystack[pos]);
 				}
