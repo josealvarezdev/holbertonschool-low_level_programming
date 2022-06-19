@@ -8,13 +8,7 @@
 */
 char *_strpbrk(char *s, char *accept)
 {
-char *n = NULL;
 int i, j;
-
-	if (!s)
-	{
-		return (n);
-	}
 
 	for (i = 0; s[i]; i++)
 	{
@@ -26,5 +20,6 @@ int i, j;
 			}
 		}
 	}
-return ('\0');
+s = NULL;
+return (s);
 }
