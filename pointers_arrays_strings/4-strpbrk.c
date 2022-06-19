@@ -18,6 +18,6 @@ int i, j;
 				return (s);
 			}
 		}
-return (0); //Algo para que no crashee
+return (0);
 	}
 }
