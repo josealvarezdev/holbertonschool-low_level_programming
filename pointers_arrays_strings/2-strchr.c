@@ -15,6 +15,7 @@ char *pos = &s[0];
 	{
 		if (s[i] == c)
 		{
+			pos = s[i];
 			return (pos);
 		}
 		else
