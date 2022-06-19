@@ -9,8 +9,7 @@
 char *_strchr(char *s, char c)
 {
 int i;
-int null = NULL;
-char pos = &s;
+char *pos = &s;
 
 	for (i = 0; i == '\0'; i++)
 	{
@@ -20,7 +19,8 @@ char pos = &s;
 		}
 		else
 		{
-			return (null);
+			pos = NULL;
+			return (pos);
 		}
 	}
 }
