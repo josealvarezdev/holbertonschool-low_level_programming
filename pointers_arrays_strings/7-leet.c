@@ -15,6 +15,6 @@ for (i = 0; a[i] != '\0'; i++)
 			a[i] == bt[j];
 		}
 	}
-return (a);
 }
+return (a);
 }
