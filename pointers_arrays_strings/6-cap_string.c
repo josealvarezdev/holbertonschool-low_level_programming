@@ -4,7 +4,7 @@
  * cap_string - function capitalize first letter
  * @a: array
  * Return: A
-*/  
+*/
 char *cap_string(char *a)
 {
 /**int b[13] = {' ', ';', '.', '!', '?', '"', '(', ')', '{', '}'};**/
