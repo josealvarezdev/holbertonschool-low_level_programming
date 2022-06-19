@@ -15,8 +15,9 @@ int i, j;
 		{
 			if (s[i] == accept[j])
 			{
-			return (i);
+			break;
 			}
 		}
 	}
+return (i);
 }
