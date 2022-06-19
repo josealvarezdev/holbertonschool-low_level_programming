@@ -16,7 +16,7 @@ int i, j;
 		{
 			if (*s == accept[j])
 			{
-				return (s);
+				return (s + i);
 			}
 		}
 	}
