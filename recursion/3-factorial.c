@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ * factorial - function of factorial recursion
+ * @n: n
+ * Return: factorial of n
+*/
 int factorial(int n)
 {
 	if (n < 0)
