@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ * _strlen_recursion - strlen but with recursion
+ * @s: array
+ * Return: counter
+*/
 int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
