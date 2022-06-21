@@ -8,8 +8,9 @@
 */
 int main(int argc, char *argv[])
 {
+int res;
 (void)argc;
-char res;
+
 res = atoi(argv[1]) * atoi(argv[2]);
 printf("%s\n", res);
 return (0);
