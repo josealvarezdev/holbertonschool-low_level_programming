@@ -14,7 +14,5 @@ return prime(i, j - 1);
 }
 int is_prime_number(int n)
 {
-int i = 0;
-int j = 0;
-return prime(i, j + 1);
+return prime(n, j + 1);
 }
