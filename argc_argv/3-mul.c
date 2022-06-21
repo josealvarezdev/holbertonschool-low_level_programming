@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 (void)argc;
-int res = atoi(argv[1]) * atoi(argv[2])
+int res = atoi(argv[1]) * atoi(argv[2]);
 printf("%d\n", res);
 return (0);
 }
