@@ -26,7 +26,7 @@ add = 0;
 				return (1);
 			}
 		}
-		add += atoi(argv[i]);
+		add += atoi(argv[j]);
 	}
 printf("%d\n", add);
 return (0);
