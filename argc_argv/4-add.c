@@ -9,12 +9,10 @@ i = 0;
 		printf("0\n");
 		return (0);
 	}
-	/**for (i = 1; i < argc; i++)
-	{*/
-		for (j = 0; j < *argv[i]; j++)
-		{
-			add += atoi(argv[i]);
-			printf("%d\n", add);
+	for (j = 0; j < argc - 1; j++)
+	{
+		add += atoi(argv[j]);
+		printf("%d\n", add);
 	}
 return (0);
 }
