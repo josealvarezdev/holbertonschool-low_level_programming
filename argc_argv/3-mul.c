@@ -8,9 +8,9 @@
 int main(int argc, char *argv[])
 {
 (void)argc;
-int *a = argv[1];
-int *b = argv[2];
-int res= a * b;
-printf("%d\n", res);
+char *a = argv[1];
+char *b = argv[2];
+char res= a * b;
+printf("%s\n", res);
 return (0);
 }
