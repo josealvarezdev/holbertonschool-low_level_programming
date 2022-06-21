@@ -2,14 +2,14 @@
 
 int _sqrt_recursion(int n)
 {
-return (_sqrtm(n, 0)
+return (_sqrtm(n, 0);
 }
 
 /**
  * Extra function to resolve sqrt
 */
 
-int _sqrtm (int n, int num2)
+int _sqrtm(int n, int num2)
 {
 int raiz = num2 * num2;
 if (raiz == n)
