@@ -7,7 +7,7 @@ int i;
 	{
 		for (i = 1; i < argc; i++)
 		{
-			printf("argv[%d] = %s\n", i, argv[i]);
+			printf("%s\n", argv[i]);
 		}
 	}
 return (0);
