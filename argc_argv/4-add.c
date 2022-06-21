@@ -10,6 +10,7 @@ add = 0;
 		return (0);
 	}
 	for (j = 1; j < argc; j++)
+	for (i = 0; i < argc; i++)
 	{
 		if ((*argv[j] >= 'a' && *argv[j] <= 'z') || (*argv[j] >= 'A' && *argv[j] <= 'Z'))
 		{
