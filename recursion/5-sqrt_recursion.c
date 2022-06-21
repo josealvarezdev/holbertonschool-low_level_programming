@@ -12,7 +12,7 @@ if (num1 * num1 == num2)
 {
 return (num1);
 }
-return (_sqrtm(num2, num1 + 1));
+return (_sqrtm(num1 + 1, num2));
 }
 /*Algo*/
 int _sqrt_recursion (int n)
