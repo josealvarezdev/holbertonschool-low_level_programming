@@ -17,7 +17,7 @@ return (_sqrtm(num2, num1 + 1));
 /*Algo*/
 int _sqrt_recursion (int n)
 {
-int num3;
+int num3 = 1;
 return (_sqrtm(num3, n));
 }
 
