@@ -11,7 +11,7 @@ int prime(int i, int j)
 	{
 		return (0);
 	}
-	if ((j % i) == 0)
+	if ((j % i) == 0 && j != i)
 	{
 		return (0);
 	}
