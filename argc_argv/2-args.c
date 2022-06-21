@@ -1,5 +1,10 @@
 #include <stdio.h>
-
+/**
+ * main - print all arguments
+ * @argc: size of array
+ * @argv: char array
+ * Return: 0
+*/
 int main(int argc, char *argv[])
 {
 int i;
