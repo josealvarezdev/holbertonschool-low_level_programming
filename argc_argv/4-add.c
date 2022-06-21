@@ -2,8 +2,8 @@
 #include <stdlib.h>
 int main(int argc, char *argv[])
 {
-int i, j, add;
-i = 0;
+int j, add;
+
 	if (argc <= 1)
 	{
 		printf("0\n");
