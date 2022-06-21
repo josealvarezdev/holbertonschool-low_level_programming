@@ -8,6 +8,7 @@ int i, j, add;
 		for (j = 0; j < *argv[i]; j++)
 		{
 			add += atoi(argv[i]);
+			printf("%d\n", add);
 		}
 	}
 return (0);
