@@ -18,7 +18,7 @@ return (num1);
 return (_sqrtm(num1 + 1, num2));
 }
 /**
- * _sqrt_recursion
+ * _sqrt_recursion - square natural root of number
  * @n: num
  * Return: num
 */
