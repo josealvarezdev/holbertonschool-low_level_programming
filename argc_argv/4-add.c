@@ -9,10 +9,15 @@ add = 0;
 		printf("0\n");
 		return (0);
 	}
-	for (j = 0; j < argc - 1; j++)
+	for (j = 1; j < argc; j++)
 	{
-		add += atoi(argv[j]);
-		printf("%d\n", add);
+		if (argv[j] >= 'a' && argv[j] <= 'z ' || argv[j] >= 'A' && argv[j] <= 'Z')
+		{
+			printf("Error\n");
+			return (1);
+		}
+add += atoi(argv[j]);
 	}
+printf("%d\n", add);
 return (0);
 }
