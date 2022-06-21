@@ -24,8 +24,8 @@ add = 0;
 				printf("Error\n");
 				return (1);
 			}
-add += atoi(argv[i]);
 		}
+		add += atoi(argv[i]);
 	}
 printf("%d\n", add);
 return (0);
