@@ -13,10 +13,10 @@ if (raiz > n)
 {
 return (-1);
 }
-return (_sqrtm(n, num +1));
+return (_sqrtm(n, num2 + 1));
 
 /*Algo*/
 int _sqrt_recursion(int n)
 {
-return (_sqrtm(n, 0);
+return (_sqrtm(n, 0));
 }
