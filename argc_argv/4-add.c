@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - add digits
  * @argc: num
@@ -19,7 +20,7 @@ add = 0;
 	{
 		for (i = 0; argv[j][i]; i++)
 		{
-			if ((argv[j][i] >= 'a' && argv[j][i] <= 'z') || (argv[j][i] >= 'A' && argv[j][i] <= 'Z'))
+			if (isdigit(argv[j][i] == 0))
 			{
 				printf("Error\n");
 				return (1);
