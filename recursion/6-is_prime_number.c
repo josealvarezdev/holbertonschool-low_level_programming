@@ -17,7 +17,8 @@ int prime(int i, int j)
 	}
 return prime(i, (j - 1));
 }
-/* is_prime_number - its prime number
+/**
+ * is_prime_number - its prime number
  * @n: number to check if its prime
  * Return: true or false in binary
 */
