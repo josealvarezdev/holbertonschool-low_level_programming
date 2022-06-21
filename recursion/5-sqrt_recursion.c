@@ -2,18 +2,18 @@
 /**
  * Extra function to resolve sqrt
 */
-int _sqrtm(int n, int num2)
+int _sqrtm(int num1, int num2)
 {
 int raiz = num2 * num2;
-if (raiz == n)
+if (raiz == num1)
 {
 return (num2);
 }
-if (raiz > n)
+if (raiz > num1)
 {
 return (-1);
 }
-return (_sqrtm(n, num2 + 1));
+return (_sqrtm(num1, num2 + 1));
 
 /*Algo*/
 int _sqrt_recursion(int n)
