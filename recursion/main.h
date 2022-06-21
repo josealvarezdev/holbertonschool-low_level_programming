@@ -6,5 +6,5 @@ void _print_rev_recursion(char *s);
 int _strlen_recursion(char *s);
 int factorial(int n);
 int _sqrt_recursion(int n);
-int _sqrtm(int n, int num2);
+int _sqrtm(int num1, int num2);
 #endif
