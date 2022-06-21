@@ -10,4 +10,5 @@ int i, j, add;
 			add += atoi(argv[i]);
 		}
 	}
+return (0);
 }
