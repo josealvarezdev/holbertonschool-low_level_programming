@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int main(int argc, char *argv[])
 {
-int j, add;
+int i, j, add;
 add = 0;
 	if (argc <= 1)
 	{
