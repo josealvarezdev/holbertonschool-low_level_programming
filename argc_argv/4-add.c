@@ -11,7 +11,7 @@ add = 0;
 	}
 	for (j = 1; j < argc; j++)
 	{
-		if (argv[j] >= 'a' && argv[j] <= 'z ' || argv[j] >= 'A' && argv[j] <= 'Z')
+		if (*argv[j] >= 'a' && *argv[j] <= 'z ' || *argv[j] >= 'A' && *argv[j] <= 'Z')
 		{
 			printf("Error\n");
 			return (1);
