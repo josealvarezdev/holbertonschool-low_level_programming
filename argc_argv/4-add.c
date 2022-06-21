@@ -20,7 +20,7 @@ add = 0;
 	{
 		for (i = 0; argv[j][i]; i++)
 		{
-			if (isdigit(argv[j][i] == 0))
+			if (isdigit(argv[j][i]) == 0)
 			{
 				printf("Error\n");
 				return (1);
