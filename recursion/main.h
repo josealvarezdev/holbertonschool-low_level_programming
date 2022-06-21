@@ -7,4 +7,5 @@ int _strlen_recursion(char *s);
 int factorial(int n);
 int _sqrt_recursion(int n);
 int _sqrtm(int num1, int num2);
+int is_prime_number(int n);
 #endif
