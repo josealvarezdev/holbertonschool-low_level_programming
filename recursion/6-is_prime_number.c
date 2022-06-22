@@ -13,6 +13,7 @@ int prime(int i, int j)
 		return (0);
 	else
 		return (prime(i, j - 1));
+}
 /**
  * is_prime_number - its prime number
  * @n: number to check if its prime
@@ -24,5 +25,4 @@ int is_prime_number(int n)
 		return (prime(n, n - 1));
 	else
 		return (0);
-}
 }
