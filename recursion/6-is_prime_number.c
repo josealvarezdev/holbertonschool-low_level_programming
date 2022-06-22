@@ -7,16 +7,12 @@
 */
 int prime(int i, int j)
 {
-	if (i == 1)
-	{
+	if (j == 1)
+		return (1);
+	else if ((i % j) == 0)
 		return (0);
-	}
-	if ((j % i) == 0 && j != i)
-	{
-		return (0);
-	}
-return prime(i, (j - 1));
-}
+	else
+		return (prime(i, j - 1));
 /**
  * is_prime_number - its prime number
  * @n: number to check if its prime
@@ -24,6 +20,8 @@ return prime(i, (j - 1));
 */
 int is_prime_number(int n)
 {
-int j = 0;
-return prime(n, (j + 1));
+	if (n > 1)
+		return (prime(n, n - 1));
+	else
+		return (0);
 }
