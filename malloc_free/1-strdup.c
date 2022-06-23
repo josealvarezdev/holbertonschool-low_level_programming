@@ -11,7 +11,9 @@ char *_strdup(char *str)
 int i;
 int size;
 char *copy;
-char *p;
+/*
+ *char *p;
+*/
 int count;
 
 	if (str == NULL)
@@ -28,6 +30,5 @@ int count;
 	{
 		copy[i] = str[i];
 	}
-p = '\0';
 return (copy);
 }
