@@ -26,7 +26,7 @@ int count;
 	}
 	for (count = 0; count < size; i++)
 	{
-	p[i] = str[i];
+		copy[i] = str[i];
 	}
 p = '\0';
 return (copy);
