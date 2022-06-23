@@ -11,7 +11,7 @@ if (width < 1 || height < 1)
 return (NULL);
 }
 fil = malloc(width * sizeof(int));
-coco = (height * sizeof(int));
+coco = malloc(height * sizeof(int));
 
 if (fil == NULL)
 return (NULL);
