@@ -1,7 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
-
+/**
+ * str_concat - concatenate arrays in a new array
+ * @s1: first
+ * @s2: second
+ * Return: pos
+*/
 char *str_concat(char *s1, char *s2)
 {
 char *pos;
