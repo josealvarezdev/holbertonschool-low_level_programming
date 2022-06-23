@@ -26,7 +26,7 @@ else
 {
 lens2 = strlen(s2);
 }
-pos = malloc(((lens1 + lens2) * sizeof(char)) + 1);
+pos = malloc(((lens1 + lens2) *sizeof(char)) + 1);
 if (pos == NULL)
 return (NULL);
 	for (a = 0; a < lens1; a++)
