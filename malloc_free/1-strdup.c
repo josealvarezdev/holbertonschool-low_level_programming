@@ -12,6 +12,10 @@ int size;
 char *copy;
 char *p;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	size = strlen(str);
 	copy = (char *)malloc(sizeof(char)*size+1);
 	if (copy == NULL)
