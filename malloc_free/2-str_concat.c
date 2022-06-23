@@ -7,9 +7,10 @@ char *str_concat(char *s1, char *s2)
 char *pos;
 int a;
 int lens1, lens2;
-
+int suma;
 lens1 = strlen(s1);
 lens2 = strlen(s2);
+suma = lens1 + lens2;
 
 pos = malloc(lens1 + lens2 * sizeof(char) + 1);
 
@@ -17,7 +18,7 @@ pos = malloc(lens1 + lens2 * sizeof(char) + 1);
 	{
 		pos[a] = s1[a];
 	}
-	for (; a < lens2; a++)
+	for (; a < suma; a++)
 	{
 		pos[a] = s2[a];
 	}
