@@ -1,5 +1,10 @@
 #include <stdlib.h>
-
+/**
+ * create_array - Crea un array con un caracter especifico var
+ * @size: size of array
+ * @c: char to init array
+ * Return: Return null or pos depending the case
+*/ 
 char *create_array(unsigned int size, char c)
 {
 unsigned int i;
