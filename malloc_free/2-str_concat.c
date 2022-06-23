@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdlib.h>
 #include <string.h>
 /**
@@ -10,11 +9,7 @@
 char *str_concat(char *s1, char *s2)
 {
 char *pos;
-int a;
-int lens1, lens2;
-int suma;
-int k;
-k = 0;
+int a, lens1, lens2, suma, k = 0;
 if (s1 == NULL)
 {
 lens1 = 0;
@@ -31,13 +26,9 @@ else
 {
 lens2 = strlen(s2);
 }
-suma = lens1 + lens2;
-
-pos = malloc((suma * sizeof(char)) + 1);
+pos = malloc(((lens1 + lens2) * sizeof(char)) + 1);
 if (pos == NULL)
-{
 return (NULL);
-}
 	for (a = 0; a < lens1; a++)
 	{
 		pos[a] = s1[a];
@@ -48,6 +39,5 @@ return (NULL);
 	k++;
 	}
 pos[a] = '\0';
-
 return (pos);
 }
