@@ -3,7 +3,7 @@
 #include <string.h>
 /**
  * _strdup - Duplicate a string
- * str - string original
+ * @str: - string original
  * Return: null or copy of the string
 */
 char *_strdup(char *str)
@@ -17,7 +17,7 @@ char *p;
 		return (NULL);
 	}
 	size = strlen(str);
-	copy = (char *)malloc(sizeof(char)*size+1);
+	copy = (char *)malloc(sizeof(char) * size + 1);
 	if (copy == NULL)
 	{
 		return ((char *)NULL);
