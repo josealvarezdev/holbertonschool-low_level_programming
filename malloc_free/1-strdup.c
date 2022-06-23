@@ -18,7 +18,7 @@ char *p;
 /* Copy String*/
 	while (*str)
 	{
-		p = *str;
+		p = str;
 		p++;
 		str++;
 	}
