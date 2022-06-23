@@ -17,7 +17,7 @@ pos = malloc(lens1 + lens2 * sizeof(char) + 1);
 	{
 		pos[a] = s1[a];
 	}
-	for (a = 0; a < lens2; a++)
+	for (; a < lens2; a++)
 	{
 		pos[a] = s2[a];
 	}
