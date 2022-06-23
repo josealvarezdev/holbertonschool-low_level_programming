@@ -28,6 +28,6 @@ int count;
 	{
 	p[i] = str[i];
 	}
-*p = '\0';
+p = '\0';
 return (copy);
 }
