@@ -21,6 +21,7 @@ pos = malloc(lens1 + lens2 * sizeof(char) + 1);
 	{
 		pos[a] = s2[a];
 	}
-p[a + 1] = '\0';
+pos[a + 1] = '\0';
+
 return (pos);
 }
