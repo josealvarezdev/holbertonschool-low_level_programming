@@ -3,7 +3,8 @@
 
 int **alloc_grid(int width, int height)
 {
-int *fil, *coco;
+int *fil;
+int *coco;
 int i, j;
 if (width < 1 || height < 1)
 {
@@ -24,6 +25,6 @@ for (i = 0; i < width; i++)
 	{
 		fil[j] = 0;
 	}
+return (NI PUTA IDEA);
 }
 }
-
