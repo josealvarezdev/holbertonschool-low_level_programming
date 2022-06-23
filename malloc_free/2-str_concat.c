@@ -13,6 +13,7 @@ k = 0;
 if(s1 == NULL)
 {
 lens1 = 0;
+}
 else
 {
 lens1 = strlen(s1);
