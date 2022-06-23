@@ -5,7 +5,7 @@
 char *_strdup(char *str)
 {
 int size;
-char *copy
+char *copy;
 char *p;
 
 /*Allocate Memory for copy*/
