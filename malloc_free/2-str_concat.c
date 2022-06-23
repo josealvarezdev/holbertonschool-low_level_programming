@@ -8,6 +8,8 @@ char *pos;
 int a;
 int lens1, lens2;
 int suma;
+int k;
+k = 0;
 lens1 = strlen(s1);
 lens2 = strlen(s2);
 suma = lens1 + lens2;
@@ -20,9 +22,10 @@ pos = malloc(lens1 + lens2 * sizeof(char) + 1);
 	}
 	for (; a < suma; a++)
 	{
-		pos[a] = s2[a];
+		pos[a] = s2[k];
+	k++;
 	}
-pos[a + 1] = '\0';
+pos[a] = '\0';
 
 return (pos);
 }
