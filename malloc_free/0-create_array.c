@@ -23,3 +23,4 @@ pos = malloc(size * sizeof(char));
 		}
 return (pos);
 }
+}
