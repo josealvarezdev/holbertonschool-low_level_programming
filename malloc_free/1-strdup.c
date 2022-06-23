@@ -23,6 +23,5 @@ char *p;
 		*str++;
 	}
 *p = '\0';
-
 return (copy);
 }
