@@ -25,6 +25,6 @@ for (i = 0; i < width; i++)
 	{
 		fil[j] = 0;
 	}
-return (NI PUTA IDEA);
+return (0);
 }
 }
