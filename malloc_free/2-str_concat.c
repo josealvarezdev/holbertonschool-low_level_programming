@@ -9,7 +9,7 @@
 char *str_concat(char *s1, char *s2)
 {
 char *pos;
-int a, lens1, lens2, suma, k = 0;
+int a, lens1, lens2, k = 0;
 if (s1 == NULL)
 {
 lens1 = 0;
