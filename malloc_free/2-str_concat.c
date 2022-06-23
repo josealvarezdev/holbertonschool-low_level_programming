@@ -28,7 +28,7 @@ lens2 = strlen(s2);
 }
 suma = lens1 + lens2;
 
-pos = malloc(suma * sizeof(char) + 1);
+pos = malloc((suma * sizeof(char)) + 1);
 if (pos == NULL)
 {
 return (NULL);
