@@ -4,7 +4,7 @@
  * @size: size of array
  * @c: char to init array
  * Return: Return null or pos depending the case
-*/ 
+*/
 char *create_array(unsigned int size, char c)
 {
 unsigned int i;
