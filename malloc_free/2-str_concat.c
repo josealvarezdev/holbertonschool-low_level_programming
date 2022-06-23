@@ -33,7 +33,7 @@ return (NULL);
 	{
 		pos[a] = s1[a];
 	}
-	for (; a < suma; a++)
+	for (; a < (lens1 + lens2); a++)
 	{
 		pos[a] = s2[k];
 	k++;
