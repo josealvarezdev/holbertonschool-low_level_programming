@@ -29,7 +29,10 @@ lens2 = strlen(s2);
 suma = lens1 + lens2;
 
 pos = malloc(lens1 + lens2 * sizeof(char) + 1);
-
+if (pos == NULL)
+{
+return (NULL);
+}
 	for (a = 0; a < lens1; a++)
 	{
 		pos[a] = s1[a];
