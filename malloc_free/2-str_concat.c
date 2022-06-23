@@ -10,7 +10,7 @@ int lens1, lens2;
 int suma;
 int k;
 k = 0;
-if(s1 == NULL)
+if (s1 == NULL)
 {
 lens1 = 0;
 }
@@ -28,7 +28,7 @@ lens2 = strlen(s2);
 }
 suma = lens1 + lens2;
 
-pos = malloc(lens1 + lens2 * sizeof(char) + 1);
+pos = malloc(suma * sizeof(char) + 1);
 if (pos == NULL)
 {
 return (NULL);
