@@ -18,9 +18,9 @@ char *p;
 /* Copy String*/
 	while (*str)
 	{
-		*p = *str;
-		*p++;
-		*str++;
+		p = *str;
+		p++;
+		str++;
 	}
 *p = '\0';
 return (copy);
