@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * alloc_grid - 
- * @width: width 
+ * alloc_grid - coso pum
+ * @width: width
  * @height: height
  * Return: Toy pillo pa
 */
@@ -33,7 +33,6 @@ int **alloc_grid(int width, int height)
 			free(m);
 			return(0);
 		}
-	
 		for (j = 0; m[i][j]; j++)
 		{
 			m[i][j] = 0;
