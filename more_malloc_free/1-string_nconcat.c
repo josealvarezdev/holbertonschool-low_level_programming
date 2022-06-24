@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * string_nconcat
+ * string_nconcat - a
  * @s1: array 1
  * @s2: array2
  * @n: n bytes
@@ -20,7 +20,7 @@ if (s2 == NULL)
 s2 = "";
 
 sizes1 = strlen(s1);
-p = malloc((sizes1 + n) + 1);
+p = malloc((sizes1 + n) + 6);
 	if (p == NULL)
 	{
 	return (NULL);
@@ -32,7 +32,7 @@ p = malloc((sizes1 + n) + 1);
 	for (j = 0; j < n; j++)
 	{
 		p[i] = s2[j];
-		i++;	
+		i++;
 	}
 p [i] = '\0';
 return (p);
