@@ -25,11 +25,11 @@ p = malloc((sizes1 + n) + 1);
 	{
 	return (NULL);
 	}
-	for (i = 0; i <= sizes1; i++)
+	for (i = 0; i < sizes1; i++)
 	{
 		p[i] = s1[i];
 	}
-	for (j = 0; j <= n; j++)
+	for (j = 0; j < n; j++)
 	{
 		p[i] = s2[j];
 		i++;	
