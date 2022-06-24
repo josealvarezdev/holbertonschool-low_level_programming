@@ -31,7 +31,7 @@ p = malloc((sizes1 + n) + 1);
 	}
 	for (j = 0; j <= n; j++)
 	{
-		p[i] = s22[j];
+		p[i] = s2[j];
 		i++;	
 	}
 p [i] = '\0';
