@@ -22,7 +22,7 @@ p = malloc(sizeof(int) * len);
 	{
 		return(NULL);
 	}
-	for (i = 0; i <= len; i++)
+	for (i = 0; i < len; i++)
 	{
 		p[i] = min + i;
 	}
