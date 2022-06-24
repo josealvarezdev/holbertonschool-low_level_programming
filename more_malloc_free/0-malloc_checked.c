@@ -13,7 +13,6 @@ unsigned int *p;
 p = malloc(b * sizeof(unsigned int));
 if (p == NULL)
 {
-return (98);
+exit(98);
 }
-return (p);
 }
