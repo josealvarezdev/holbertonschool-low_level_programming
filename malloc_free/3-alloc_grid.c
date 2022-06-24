@@ -1,30 +1,39 @@
 #include <stdlib.h>
 #include <string.h>
-
+/**
+ * alloc_grid - 
+ * @width: width 
+ * @height: height
+ * Return: Toy pillo pa
+*/
 int **alloc_grid(int width, int height)
 {
-int *fil;
-int *coco;
-int i, j;
-if (width < 1 || height < 1)
-{
-return (NULL);
+	int **m;
+	int i, j;
+
+	if (width < 1 || height < 1)
+		return (NULL);
 }
-fil = malloc(width * sizeof(int));
-coco = malloc(height * sizeof(int));
-
-if (fil == NULL)
-return (NULL);
-if (coco == NULL)
-return (NULL);
-
-for (i = 0; i < width; i++)
-{
-	coco[i] = 0;
-	for(j = 0; j < height; j++)
+m = malloc(size *(int *) * h)
+	if (m == NULL)
 	{
-		fil[j] = 0;
+	return;
 	}
-}
-return(0);
+for (i = 0; i < h; i++)
+{
+	m[i] = malloc(int)* w;
+	if (m[i] = NULL)
+	{
+		for(i; i >= 0; i--)
+		{
+			free(p[i]);
+		}
+	free(m);
+	return(0);
+	}
+	for(j = 0; j < w; j++)
+	{
+		m[i][j] = 0;
+	}
+return (m);
 }
