@@ -20,7 +20,7 @@ len = max - min + 1;
 p = malloc(sizeof(int) * len);
 	if (p == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	for (i = 0; i < len; i++)
 	{
