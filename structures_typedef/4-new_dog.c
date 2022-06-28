@@ -49,7 +49,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *pos;
 (void)age;
-int lname, lowner;
+int lname;
+int lowner;
 
 pos = malloc(sizeof(dog_t));
 	if (pos == NULL)
