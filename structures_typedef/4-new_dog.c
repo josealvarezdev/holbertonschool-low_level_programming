@@ -37,14 +37,14 @@ pos = malloc(sizeof(dog_t));
 lname = _strlen(name);
 lowner = _strlen(owner);
 
-pos->name = malloc(lname * sizeof(pos->name));
+pos->name = malloc(lname + 1);
 	if (pos->name == NULL)
 	{
 		free(pos->name);
 		free(pos);
 		return (NULL);
 	}
-pos->owner = malloc(lowner * sizeof(pos->owner));
+pos->owner = malloc(lowner + 1);
 	if (pos->owner == NULL)
 	{
 		free(pos->owner);
@@ -57,9 +57,11 @@ pos->age = age;
 	{
 		pos->name[i] = name[i];
 	}
+	pos->name[i] = '\0';
 	for (j = 0; j < lowner; j++)
 	{
 		pos->owner[j] = owner[j];
 	}
+	pos->owner[j] = '\0';
 	return (pos);
 }
