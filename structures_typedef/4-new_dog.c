@@ -72,6 +72,6 @@ pos->owner = malloc(lowner * sizeof(pos->owner));
 		return (NULL);
 	}
 pos->age = age;
-	_strcpy(pos, new_dog);
+	_strcpy(dog_t pos, dog_t new_dog);
 	return (pos);
 }
