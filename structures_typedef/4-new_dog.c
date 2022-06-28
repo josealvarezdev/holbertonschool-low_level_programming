@@ -47,10 +47,9 @@ return (dest);
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
+int lowner;
+int lname;
 dog_t *pos;
-(void)age;
-char lname;
-char lowner;
 
 pos = malloc(sizeof(dog_t));
 	if (pos == NULL)
