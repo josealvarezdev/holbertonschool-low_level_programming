@@ -1,6 +1,13 @@
-#ifndef DOGCHOW
-#define DOGCHOW
-
+#ifndef DOG
+#define DOG
+/**
+ * struct dog - defines a dog class
+ * @name: name
+ * @age: age
+ * @owner: owner
+ *
+ * Description: dog
+*/
 struct dog
 {
 char *name;
