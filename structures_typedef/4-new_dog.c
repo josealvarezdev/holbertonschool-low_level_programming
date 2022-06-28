@@ -17,38 +17,10 @@ while (*s != '\0')
 	}
 return (count);
 }
-/**
- * _strcpy - copy array
- * @dest: destino de copia
- * @src: original
- * Return: 0;
-*/
-char *_strcpy(char *dest, char *src)
-{
-	int count = 0;
-if (!src || !dest)
-{
-	return (0);
-}
-while (src[count] != '\0')
-{
-dest[count] = src[count];
-count++;
-}
-dest[count] = '\0';
-return (dest);
-}
-/**
- * new_dog - dogchow
- * @name: name
- * @age: age
- * @owner: owner
- * Return: return
-*/
 dog_t *new_dog(char *name, float age, char *owner)
 {
-int lowner;
-int lname;
+int lname, lowner, i, j;
+char *name2, *owner2;
 dog_t *pos;
 
 pos = malloc(sizeof(dog_t));
@@ -72,6 +44,13 @@ pos->owner = malloc(lowner * sizeof(pos->owner));
 		return (NULL);
 	}
 pos->age = age;
-	_strcpy(dog_t pos, dog_t new_dog);
+	for (i = 0; i < lname; i++)
+	{
+		name2[i] = name[i];
+	}
+	for (j = 0; j < lowner; j++)
+	{
+		owner2[j] = owner[j];
+	}
 	return (pos);
 }
