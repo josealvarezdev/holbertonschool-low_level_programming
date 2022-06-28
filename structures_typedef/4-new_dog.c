@@ -49,7 +49,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *pos;
 (void)age;
-int lname, lowner, i;
+int lname, lowner;
 
 pos = malloc(sizeof(dog_t));
 	if (pos == NULL)
@@ -69,8 +69,9 @@ pos->owner = malloc(lowner * sizeof(pos->owner));
 	if (pos->owner == NULL)
 	{
 		free(pos->owner);
-		return(NULL);
+		return (NULL);
 	}
 pos->age = age;
-	_strcpy(dog_t *pos, dog_t *new_dog)
+	_strcpy(pos, new_dog);
+	return (pos);
 }
