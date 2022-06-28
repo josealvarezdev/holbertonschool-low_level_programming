@@ -49,7 +49,7 @@ pos->owner = malloc(lowner + 1);
 	{
 		free(pos->owner);
 		free(pos->name);
-		free(pos);	
+		free(pos);
 		return (NULL);
 	}
 pos->age = age;
