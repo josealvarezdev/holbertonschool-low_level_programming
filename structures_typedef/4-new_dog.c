@@ -17,10 +17,16 @@ while (*s != '\0')
 	}
 return (count);
 }
+/**
+ * new_dog - dogie
+ * @name: name
+ * @age: age
+ * @owner: owner
+ * Return: Return
+*/
 dog_t *new_dog(char *name, float age, char *owner)
 {
 int lname, lowner, i, j;
-char *name2, *owner2;
 dog_t *pos;
 
 pos = malloc(sizeof(dog_t));
@@ -46,11 +52,11 @@ pos->owner = malloc(lowner * sizeof(pos->owner));
 pos->age = age;
 	for (i = 0; i < lname; i++)
 	{
-		name2[i] = name[i];
+		pos->name[i] = name[i];
 	}
 	for (j = 0; j < lowner; j++)
 	{
-		owner2[j] = owner[j];
+		pos->owner[j] = owner[j];
 	}
 	return (pos);
 }
