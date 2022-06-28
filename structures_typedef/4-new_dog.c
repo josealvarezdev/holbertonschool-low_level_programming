@@ -1,7 +1,22 @@
 #include "dog.h"
 #include <stdio.h>
-#include <stdlib.h>i
-#include <string.h>
+#include <stdlib.h>
+/**
+ * _strlen - returns lenght of a string
+ * @s: is a value
+ * Return: Void
+*/
+int _strlen(char *s)
+{
+int count;
+count = 0;
+while (*s != '\0')
+	{
+	count++;
+	s++;
+	}
+return (count);
+}
 /**
  * new_dog - dogchow
  * @name: name
@@ -19,8 +34,8 @@ pos = malloc(sizeof(dog_t));
 	{
 		return (NULL);
 	}
-lname = strlen(name);
-lowner = strlen(owner);
+lname = _strlen(name);
+lowner = _strlen(owner);
 
 pos->name = malloc(lname * sizeof(pos->name));
 	if (pos->name == NULL)
