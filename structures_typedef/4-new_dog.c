@@ -41,12 +41,15 @@ pos->name = malloc(lname * sizeof(pos->name));
 	if (pos->name == NULL)
 	{
 		free(pos->name);
+		free(pos);
 		return (NULL);
 	}
 pos->owner = malloc(lowner * sizeof(pos->owner));
 	if (pos->owner == NULL)
 	{
 		free(pos->owner);
+		free(pos->name);
+		free(pos);	
 		return (NULL);
 	}
 pos->age = age;
