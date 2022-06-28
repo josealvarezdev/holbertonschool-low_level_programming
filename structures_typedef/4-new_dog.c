@@ -27,6 +27,7 @@ return (count);
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *pos;
+(void)age;
 int lname, lowner;
 
 pos = malloc(sizeof(dog_t));
