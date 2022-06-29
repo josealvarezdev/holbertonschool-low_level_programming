@@ -3,10 +3,10 @@
 #include <stdio.h>
 #include <stddef.h>
 /**
- * array_iterator - array iterator douh
+ * int_index - int index fun
  * @array: array
  * @size: size
- * @action: action douh
+ * @cmp: fun to compare
  * Return: Nothing.
  */
 int int_index(int *array, int size, int (*cmp)(int))
