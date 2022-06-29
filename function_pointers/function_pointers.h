@@ -1,5 +1,6 @@
-#ifndef
-#define
+#include <stddef.h>
+#ifndef MAIN
+#define MAIN
 void print_name(char *name, void (*f)(char *));
 void array_iterator(int *array, size_t size, void (*action)(int));
 #endif
