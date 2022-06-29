@@ -15,13 +15,15 @@ int i;
 
 	if (size <= 0)
 	{
-		return(-1);
+		return (-1);
 	}
 	if(array != 0 && cmp != 0)
 	{
 		for (i = 0; size > i; i++)
 		{
 		if(cmp(array[i]));
+		return (i);
 		}
 	}
+return (-1);
 }
