@@ -21,7 +21,7 @@ int i;
 	{
 		for (i = 0; size > i; i++)
 		{
-		if(cmp(array[i]));
+		if (cmp(array[i]))
 		return (i);
 		}
 	}
