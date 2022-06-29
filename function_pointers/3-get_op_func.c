@@ -13,12 +13,14 @@ op_t ops[] = {
     };
     int i;
 
-	while (ops[i] != '\0')
+i = 0;
+	while (ops[i].op != NULL)
 	{
-		if(ops[i] == argv[2]) 
+		if (*(ops[i].op) == s[0])
 		{
-			f
+			return (ops[i].f);
 		}
 		i++;
 	}
+	return (NULL);
 }
