@@ -1,6 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
-
+/**
+ * get_op_func - gets the appropiate pointer to the function
+ * @s: argument count
+ *
+ * Return: result of function
+ */
 int (*get_op_func(char *s))(int, int)
 {
 op_t ops[] = {
