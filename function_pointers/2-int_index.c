@@ -17,7 +17,7 @@ int i;
 	{
 		return (-1);
 	}
-	if(array != 0 && cmp != 0)
+	if (array != 0 && cmp != 0)
 	{
 		for (i = 0; size > i; i++)
 		{
