@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 int res;
 	if (argc != 4)
@@ -25,5 +25,5 @@ int res;
 	printf("Error\n");
 	exit(99);
 	}
-return (res);
+return (0);
 }
