@@ -15,7 +15,7 @@ int res;
 		printf("Error\n");
 		exit(100);
 	}
-	if (*(argv[2] == '/' && (argv[2] == '%')) && (atoi(argv[3])== 0))
+	if ((*(argv[2] == '/' && (argv[2] == '%')) && (atoi(argv[3])== 0)))
 	{
 		printf("Error\n");
 		exit(100);
@@ -25,4 +25,5 @@ int res;
 	printf("Error\n");
 	exit(99);
 	}
+return (res);
 }
