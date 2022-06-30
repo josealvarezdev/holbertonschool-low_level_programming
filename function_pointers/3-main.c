@@ -17,7 +17,7 @@ int res;
 	}
 	if ((*(argv[2] == '/' && (argv[2] == '%')) && (atoi(argv[3])== 0)))
 	{
-		printf("Error\n");
+		printf("%d\n", res);
 		exit(100);
 	}
 	else
