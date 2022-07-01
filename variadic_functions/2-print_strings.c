@@ -19,7 +19,7 @@ for (i = 0; i < n; i++)
 	if (v == 0)
 		printf("(nil)");
 	else
-		printf("%d", v);
+		printf("%s", v);
 	if (separator != NULL && i < n - 1)
 		printf("%s", separator);
 }
