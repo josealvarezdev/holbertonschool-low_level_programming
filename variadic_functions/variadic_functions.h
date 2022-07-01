@@ -1,5 +1,5 @@
-#ifndef
-#define
+#ifndef MICHA
+#define MICHA
 int sum_them_all(const unsigned int n, ...);
 
 #endif
