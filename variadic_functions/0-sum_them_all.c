@@ -12,7 +12,7 @@ va_list ar;
 int sum, i;
 
 va_start (ar, n);
-	for (i = 0; i < n, i++)
+	for (i = 0; i < n; i++)
 	{
 		sum += va_arg(ar, int);
 	}
