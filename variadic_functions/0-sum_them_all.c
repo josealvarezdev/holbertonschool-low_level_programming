@@ -17,5 +17,6 @@ va_start (ar, n);
 		sum += va_arg(ar, int);
 	}
 va_end (ar);
-}
+
 return (sum);
+}
