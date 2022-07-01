@@ -15,7 +15,7 @@ va_list bet;
 va_start(bet, n);
 for (i = 0; i < n; i++)
 {
-	if (va_arg(bet, int) == NULL)
+	if (va_arg(bet, int) == 0)
 		printf("(nil)");
 	else
 		printf("%d", va_arg(bet, int));
