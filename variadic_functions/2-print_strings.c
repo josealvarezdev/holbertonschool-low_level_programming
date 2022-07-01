@@ -10,14 +10,12 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 unsigned int i;
-char *val;
 va_list bet;
 
 va_start(bet, n);
 for (i = 0; i < n; i++)
 {
-	val = va_arg(bet, char);
-	if (val == NULL)
+	if (va_arg(bet, char) == NULL)
 		printf("(nil)");
 	else
 		printf("%s", va_arg(bet, char));
