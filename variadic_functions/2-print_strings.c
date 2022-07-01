@@ -20,7 +20,7 @@ for (i = 0; i < n; i++)
 	if (val == NULL)
 		printf("(nil)");
 	else
-		printf("%d", va_arg(bet, int));
+		printf("%d", va_arg(bet, char));
 	if (separator != NULL && i < n - 1)
 		printf("%s", separator);
 }
