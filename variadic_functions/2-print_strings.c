@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * print_string - h
+ * print_string - description aaaaa
  * @separator: sep
  * @n: number of arguments
 */
