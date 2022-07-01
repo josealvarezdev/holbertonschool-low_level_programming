@@ -16,7 +16,7 @@ va_list bet;
 va_start(bet, n);
 for (i = 0; i < n; i++)
 {
-	val = va_arg(bet, int);
+	val = va_arg(bet, char);
 	if (val == NULL)
 		printf("(nil)");
 	else
