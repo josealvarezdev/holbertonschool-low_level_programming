@@ -3,7 +3,7 @@
  * holapepe - hola pepe
  * Return: null
 */
-void holapepe(list, format)
+void holapepe(va_list list, const char * const format)
 {
 	while (format == NULL)
 	{
