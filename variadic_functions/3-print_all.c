@@ -33,7 +33,7 @@ va_start(list, format);
 					printf(",");
 					break;
 			case 'f':
-					printf("%f", va_arg(list, float));
+					printf("%f", va_arg(list, double));
 					printf(",");
 					break;
 			default:
