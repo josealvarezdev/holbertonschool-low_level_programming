@@ -10,6 +10,7 @@ char *st;
 va_list list;
 i = 0;
 
+va_start(list, format);
 	while(format[i])
 	{
 		switch(format[i])
