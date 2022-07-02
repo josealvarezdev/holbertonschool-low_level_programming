@@ -14,14 +14,14 @@ va_list list;
 i = 0;
 
 va_start(list, format);
-	while(format[i] != '\0')
+	while (format[i] != '\0')
 	{
-		switch(format[i])
+		switch (format[i])
 		{
 			case 'c':
 					printf("%c", va_arg(list, int));
 					break;
-			case 's':	
+			case 's':
 					st = va_arg(list, char *);
 					if (st == NULL)
 					{
