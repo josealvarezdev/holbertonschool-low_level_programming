@@ -1,5 +1,16 @@
 #include "variadic_functions.h"
 /**
+ * holapepe - hola pepe
+ * Return: null
+*/
+void holapepe(list, format)
+{
+	while (format == NULL)
+	{
+		printf("\n");
+		return;
+	}
+/**
  * print_all - a
  * @format: format
 */
@@ -9,11 +20,7 @@ unsigned int i = 0;
 char *st;
 va_list list;
 va_start(list, format);
-while (format == NULL)
-{
-printf("\n");
-return;
-}
+holapepe(list, format);
 		while (format[i] != '\0' && format != NULL)
 	{
 		switch (format[i])
