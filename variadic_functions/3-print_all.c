@@ -9,6 +9,8 @@ unsigned int i = 0;
 va_list list;
 char *st;
 va_start(list, format);
+while(format)
+{
 		while (format[i] != '\0' && format != NULL)
 	{
 		switch (format[i])
@@ -41,4 +43,5 @@ va_start(list, format);
 	}
 printf("\n");
 va_end(list);
+}
 }
