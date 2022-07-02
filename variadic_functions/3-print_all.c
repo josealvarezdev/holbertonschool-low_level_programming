@@ -42,6 +42,6 @@ va_start(list, format);
 		}
 	i++;
 	}
-printf("\n");
 va_end(list);
+printf("\n");
 }
