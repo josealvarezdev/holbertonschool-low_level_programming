@@ -14,7 +14,7 @@ va_list list;
 i = 0;
 
 va_start(list, format);
-	while(format[i] != 0)
+	while(format[i] != '\0')
 	{
 		switch(format[i])
 		{
