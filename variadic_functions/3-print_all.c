@@ -11,13 +11,13 @@ va_list list;
 i = 0;
 
 va_start(list, format);
-	while(format[i])
+	while(format[i] != NULL)
 	{
 		switch(format[i])
 		{
 			case 'c':
 					printf("%c", va_arg(list, int));
-					printf(",");
+					printf(", ");
 					break;
 			case 's':	
 					st = va_arg(list, char *);
@@ -27,15 +27,15 @@ va_start(list, format);
 						return;
 					}
 					printf("%s", st);
-					printf(",");
+					printf(", ");
 					break;
 			case 'i':
 					printf("%d", va_arg(list, int));
-					printf(",");
+					printf(", ");
 					break;
 			case 'f':
 					printf("%f", va_arg(list, double));
-					printf(",");
+					printf(", ");
 					break;
 			default:
 				continue;
