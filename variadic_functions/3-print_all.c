@@ -44,7 +44,6 @@ va_start(list, format);
 		printf(", ");
 	i++;
 	}
-printf("\n");
 va_end(list);
 printf("\n");
 }
