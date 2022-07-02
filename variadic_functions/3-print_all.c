@@ -25,7 +25,7 @@ va_start(list, format);
 					{
 						printf("(nil)");
 					}
-					printf("%s", va_arg(list, char *);
+					printf("%s", va_arg(list, char *));
 					printf(",");
 					break;
 			case 'i':
