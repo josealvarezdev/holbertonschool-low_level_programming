@@ -2,7 +2,10 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * print_all - a
+ * @format: format
+*/
 void print_all(const char * const format, ...)
 {
 unsigned int i;
@@ -34,6 +37,7 @@ va_start(list, format);
 					printf("%f", va_arg(list, double));
 					break;
 			default:
+				i++;
 				continue;
 		}
 	if (format[i + 1] != '\0')
