@@ -46,7 +46,7 @@ if (format)
 		printf(", ");
 	i++;
 	}
-va_end(list);
 }
+va_end(list);
 printf("\n");
 }
