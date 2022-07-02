@@ -25,14 +25,18 @@ i = 0;
 						printf("(nil)");
 					}
 					printf("%s", va_arg(list, char *);
+					printf(",");
 					break;
 			case 'i':
 					printf("%d", va_arg(list, int));
+					printf(",");
 					break;
 			case 'f':
 					printf(%f, va_arg(list, float));
+					printf(",");
 					break;
-			printf(",");
+			default:
+				continue;
 		}
 	i++;
 	}
