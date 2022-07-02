@@ -8,13 +8,11 @@
 */
 void print_all(const char * const format, ...)
 {
-unsigned int i;
+unsigned int i = 0;
 char *st;
 va_list list;
-i = 0;
-
 va_start(list, format);
-while(format == NULL)
+while (format == NULL)
 {
 printf("\n");
 return;
@@ -51,4 +49,4 @@ return;
 	}
 va_end(list);
 printf("\n");
-}
+	}
