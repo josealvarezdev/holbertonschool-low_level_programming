@@ -14,6 +14,11 @@ va_list list;
 i = 0;
 
 va_start(list, format);
+while(format == NULL)
+{
+printf("\n");
+return;
+}
 		while (format[i] != '\0' && format != NULL)
 	{
 		switch (format[i])
