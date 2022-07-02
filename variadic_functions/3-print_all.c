@@ -26,7 +26,7 @@ va_start(list, format);
 					if (st == NULL)
 					{
 						printf("(nil)");
-						return;
+						break;
 					}
 					printf("%s", st);
 					break;
