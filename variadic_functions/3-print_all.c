@@ -21,7 +21,9 @@ i = 0;
 			case 's':	
 					st = va_arg(list, char *);
 					if (st == NULL)
+					{
 						printf("(nil)");
+					}
 					printf("%s", va_arg(list, char *);
 					break;
 			case 'i':
