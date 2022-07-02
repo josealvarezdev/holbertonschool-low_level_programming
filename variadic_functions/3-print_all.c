@@ -7,7 +7,7 @@ void print_all(const char * const format, ...)
 {
 unsigned int i = 0;
 va_list list;
-char *st = va_arg(list, char *);
+char *st;
 va_start(list, format);
 while(format == NULL)
 {
@@ -22,6 +22,7 @@ while(format == NULL)
 					printf("%c", va_arg(list, int));
 					break;
 			case 's':
+					st = va_arg(list, char *);
 					if (st == NULL)
 					{
 						printf("(nil)");
@@ -43,6 +44,6 @@ while(format == NULL)
 		printf(", ");
 	i++;
 	}
-va_end(list);
 printf("\n");
+va_end(list);
 	}
