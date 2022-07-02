@@ -1,7 +1,4 @@
-#include <stdarg.h>
 #include "variadic_functions.h"
-#include <stdio.h>
-#include <stdlib.h>
 /**
  * print_all - a
  * @format: format
