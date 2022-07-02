@@ -6,18 +6,18 @@
 void print_all(const char * const format, ...)
 {
 unsigned int i;
+char *sep = "";
 char *st;
 va_list list;
 i = 0;
 
 va_start(list, format);
-	while(format[i] != 0)
+	while(format[i])
 	{
 		switch(format[i])
 		{
 			case 'c':
 					printf("%c", va_arg(list, int));
-					printf(", ");
 					break;
 			case 's':	
 					st = va_arg(list, char *);
@@ -27,19 +27,18 @@ va_start(list, format);
 						return;
 					}
 					printf("%s", st);
-					printf(", ");
 					break;
 			case 'i':
 					printf("%d", va_arg(list, int));
-					printf(", ");
 					break;
 			case 'f':
 					printf("%f", va_arg(list, double));
-					printf(", ");
 					break;
 			default:
 				continue;
 		}
+	if (format[i + 1] != '\0')
+		printf(", ");
 	i++;
 	}
 va_end(list);
