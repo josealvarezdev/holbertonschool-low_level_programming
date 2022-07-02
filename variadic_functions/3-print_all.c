@@ -1,26 +1,19 @@
 #include "variadic_functions.h"
 /**
- * holapepe - hola pepe
- * Return: null
-*/
-void holapepe(va_list list, const char * const format)
-{
-	while (format == NULL)
-	{
-		printf("\n");
-		return;
-	}
-/**
  * print_all - a
  * @format: format
 */
 void print_all(const char * const format, ...)
 {
 unsigned int i = 0;
-char *st;
 va_list list;
+char *st = va_arg(list, char *);
 va_start(list, format);
-holapepe(list, format);
+while(format == NULL)
+{
+	printf("\n");
+	return;
+}
 		while (format[i] != '\0' && format != NULL)
 	{
 		switch (format[i])
@@ -29,7 +22,6 @@ holapepe(list, format);
 					printf("%c", va_arg(list, int));
 					break;
 			case 's':
-					st = va_arg(list, char *);
 					if (st == NULL)
 					{
 						printf("(nil)");
