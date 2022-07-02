@@ -14,8 +14,6 @@ va_list list;
 i = 0;
 
 va_start(list, format);
-if (format)
-{
 	while(format[i])
 	{
 		switch(format[i])
@@ -46,7 +44,6 @@ if (format)
 		printf(", ");
 	i++;
 	}
-}
 va_end(list);
 printf("\n");
 }
