@@ -1,47 +1,61 @@
 #include "variadic_functions.h"
+#include <stdio.h>
+void print_int(va_list list)
+{
+	printf("%d", va_arg(list, int));
+}
+void print_char(va_list list)
+{
+	printf("%c", va_arg(list, char));
+}
+void print_float
+{
+	printf("%f", va_arg(list, double));
+}
+void print_string(va_list list)
+{
+char *st
+	st = va_arg(list, char *)
+	if (st == NULL)
+	{
+		printf("(nil)");
+		return;
+	}
+printf("%s", st)
+}
 /**
  * print_all - a
- * @format: format
+ * @format: asd
+ * Return: N
 */
 void print_all(const char * const format, ...)
 {
-unsigned int i = 0;
+unsigned int i, j = 0;
 va_list list;
-char *st;
+char *sep = "";
+
+type picker[] = { 
+{'c', print_char},
+{'i', print_int},
+{'f', print_float},
+{'s', print_string},
+{'\0', NULL} };
+
 va_start(list, format);
-while(format != NULL)
-{
-		while (format[i] != '\0' && format != NULL)
+	while (format != NULL && format[i] != '\0')
 	{
-		switch (format[i])
+		while(picker[j].let != '\0')
 		{
-			case 'c':
-					printf("%c", va_arg(list, int));
-					break;
-			case 's':
-					st = va_arg(list, char *);
-					if (st == NULL)
-					{
-						printf("(nil)");
-						break;
-					}
-					printf("%s", st);
-					break;
-			case 'i':
-					printf("%d", va_arg(list, int));
-					break;
-			case 'f':
-					printf("%f", va_arg(list, double));
-					break;
-			default:
-				i++;
-				continue;
+			if (picker[j].let == format[j])
+			{
+			printf("%s", sep);
+			picker[j].f(list);
+			sep = ",";
+			}
+		j++
 		}
-	if (format[i + 1] != '\0')
-		printf(", ");
-	i++;
+	i++
 	}
-}
-printf("\n");
 va_end(list);
+printf("\n");
 }
