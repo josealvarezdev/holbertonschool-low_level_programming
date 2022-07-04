@@ -12,5 +12,5 @@ typedef struct picker
 {
 	char let;
 	void (*f)(va_list);
-} picker;
+} pick_al;
 #endif

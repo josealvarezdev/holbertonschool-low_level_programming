@@ -21,7 +21,7 @@ char *st;
 		printf("(nil)");
 		return;
 	}
-printf("%s", st)
+printf("%s", st);
 }
 /**
  * print_all - a
@@ -34,7 +34,7 @@ unsigned int i, j = 0;
 va_list list;
 char *sep = "";
 
-datatype picker[] = { {'c', print_char},
+pick_al picker[] = { {'c', print_char},
 			{'i', print_int},
 			{'f', print_float},
 			{'s', print_string},
