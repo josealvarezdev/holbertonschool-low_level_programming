@@ -1,0 +1,3 @@
+#Comentario para que Betty no grite
+all:
+	gcc -o school main.c m.h a.out school.c
