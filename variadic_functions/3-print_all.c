@@ -67,7 +67,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (pik[j].let != '\0')
 		{
-			if (pik[j].let == format[j])
+			if (pik[j].let == format[i])
 			{
 				printf("%s", sep);
 				pik[j].f(list);
