@@ -30,32 +30,33 @@ printf("%s", st);
 */
 void print_all(const char * const format, ...)
 {
-unsigned int i, j;
-va_list list;
-char *sep = "";
-i = 0;
-pick_al pik[5] = { {'c', print_char},
-		  {'i', print_int},
-		  {'f', print_float},
-		  {'s', print_string},
-		  {'\0', NULL} 
-};
-va_start(list, format);
+	unsigned int i = 0, j;
+	va_list list;
+	char *sep = "";
+	pick_al pik[] = {
+		{'c', print_char},
+		{'i', print_int},
+		{'f', print_float},
+		{'s', print_string},
+		{'\0', NULL} 
+	};
+
+	va_start(list, format);
 	while (format != NULL && format[i] != '\0')
 	{
-	j = 0;
+		j = 0;
 		while(pik[j].let != '\0')
 		{
 			if (pik[j].let == format[j])
 			{
-			printf("%s", sep);
-			pik[j].f(list);
-			sep = ", ";
+				printf("%s", sep);
+				pik[j].f(list);
+				sep = ", ";
 			}
 		j++;
 		}
 	i++;
 	}
-va_end(list);
-printf("\n");
+	va_end(list);
+	printf("\n");
 }
