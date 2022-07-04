@@ -11,6 +11,6 @@ void print_all(const char * const format, ...);
 typedef struct pick
 {
 	char let;
-	void (*f)(va_list);
+	void (*f)(va_list list);
 } pick_al;
 #endif
