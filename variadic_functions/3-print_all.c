@@ -50,7 +50,7 @@ printf("%s", st);
 */
 void print_all(const char * const format, ...)
 {
-	unsigned int i = 0, j;
+	int i = 0, j;
 	va_list list;
 	char *sep = "";
 	pick_al pik[] = {
