@@ -1,0 +1,5 @@
+#Comentario para que que Betty no grite
+CC = gcc
+SRC = *.c
+all:
+	$(CC) -o school $(SRC)
