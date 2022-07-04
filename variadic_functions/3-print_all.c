@@ -34,7 +34,7 @@ unsigned int i, j;
 va_list list;
 char *sep = "";
 i = 0;
-pick_al picker[] = { {'c', print_char},
+pick_al pik[] = { {'c', print_char},
 			{'i', print_int},
 			{'f', print_float},
 			{'s', print_string},
@@ -43,13 +43,13 @@ va_start(list, format);
 	while (format != NULL && format[i] != '\0')
 	{
 	j = 0;
-		while(picker[j].let != '\0')
+		while(pik[j].let != '\0')
 		{
-			if (picker[j].let == format[j])
+			if (pik[j].let == format[j])
 			{
 			printf("%s", sep);
-			picker[j].f(list);
-			sep = ",";
+			pik[j].f(list);
+			sep = ", ";
 			}
 		j++;
 		}
