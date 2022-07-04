@@ -8,14 +8,14 @@ void print_char(va_list list)
 {
 	printf("%c", va_arg(list, char));
 }
-void print_float
+void print_float(va_list list)
 {
 	printf("%f", va_arg(list, double));
 }
 void print_string(va_list list)
 {
-char *st
-	st = va_arg(list, char *)
+char *st;
+	st = va_arg(list, char *);
 	if (st == NULL)
 	{
 		printf("(nil)");
@@ -34,13 +34,11 @@ unsigned int i, j = 0;
 va_list list;
 char *sep = "";
 
-type picker[] = { 
-{'c', print_char},
-{'i', print_int},
-{'f', print_float},
-{'s', print_string},
-{'\0', NULL} };
-
+datatype picker[] = { {'c', print_char},
+			{'i', print_int},
+			{'f', print_float},
+			{'s', print_string},
+			{'\0', NULL} };
 va_start(list, format);
 	while (format != NULL && format[i] != '\0')
 	{
