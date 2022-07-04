@@ -1,17 +1,37 @@
 #include "variadic_functions.h"
 #include <stdio.h>
+/**
+* print_int - a
+* @list: list
+* Return: a
+*/
 void print_int(va_list list)
 {
 	printf("%d", va_arg(list, int));
 }
+/**
+ * print_char - a
+ * @list: list
+ * Return: a
+*/
 void print_char(va_list list)
 {
 	printf("%c", va_arg(list, int));
 }
+/**
+* print_float - a
+* @list: list
+* Return: a
+*/
 void print_float(va_list list)
 {
 	printf("%f", va_arg(list, double));
 }
+/**
+* print_string - a
+* @list: list
+* Return: a
+*/
 void print_string(va_list list)
 {
 char *st;
