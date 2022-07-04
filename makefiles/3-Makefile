@@ -8,9 +8,9 @@ Magianegra: %.c m.h
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 clean:
-	$(RM) %.swp
+	$(RM) %.swp $(NAME)
 oclean:
-	$(RM) %.o
+	$(RM) $(OBJ)
 fclean:
 	$(RM) $(OBJ) $(SRC) $(NAME)
-
+re: oclean all
