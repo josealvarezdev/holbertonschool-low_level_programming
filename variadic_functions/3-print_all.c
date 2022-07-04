@@ -34,7 +34,7 @@ unsigned int i, j;
 va_list list;
 char *sep = "";
 i = 0;
-struct picker pik[] = { {'c', print_char},
+pick_al pik[] = { {'c', print_char},
 		  {'i', print_int},
 		  {'f', print_float},
 		  {'s', print_string},
