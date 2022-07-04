@@ -2,5 +2,7 @@ CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:%.c=%.o)
 NAME = school
-all:
-	$(CC) $^ -o $@
+all: m.h %.c
+	$(CC) $(OBJ) -o $(NAME)
+Prueba: %.c m.h
+	$(CC) $^ -o $@	
