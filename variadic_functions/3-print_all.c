@@ -34,11 +34,11 @@ unsigned int i, j;
 va_list list;
 char *sep = "";
 i = 0;
-picker pik[] = { {'c', print_char},
-			{'i', print_int},
-			{'f', print_float},
-			{'s', print_string},
-			{'\0', NULL} };
+struct picker pik[] = { {'c', print_char},
+		  {'i', print_int},
+		  {'f', print_float},
+		  {'s', print_string},
+		  {'\0', NULL} };
 va_start(list, format);
 	while (format != NULL && format[i] != '\0')
 	{
