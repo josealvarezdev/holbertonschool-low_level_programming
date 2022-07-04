@@ -6,7 +6,7 @@ void print_int(va_list list)
 }
 void print_char(va_list list)
 {
-	printf("%c", va_arg(list, char));
+	printf("%c", va_arg(list, int));
 }
 void print_float(va_list list)
 {
@@ -30,10 +30,10 @@ printf("%s", st);
 */
 void print_all(const char * const format, ...)
 {
-unsigned int i, j = 0;
+unsigned int i, j;
 va_list list;
 char *sep = "";
-
+i = 0;
 pick_al picker[] = { {'c', print_char},
 			{'i', print_int},
 			{'f', print_float},
@@ -42,6 +42,7 @@ pick_al picker[] = { {'c', print_char},
 va_start(list, format);
 	while (format != NULL && format[i] != '\0')
 	{
+	j = 0;
 		while(picker[j].let != '\0')
 		{
 			if (picker[j].let == format[j])
@@ -50,9 +51,9 @@ va_start(list, format);
 			picker[j].f(list);
 			sep = ",";
 			}
-		j++
+		j++;
 		}
-	i++
+	i++;
 	}
 va_end(list);
 printf("\n");
