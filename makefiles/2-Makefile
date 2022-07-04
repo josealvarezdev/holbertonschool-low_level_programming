@@ -3,4 +3,4 @@ SRC = main.c school.c
 OBJ = main.o school.o
 NAME = school
 all: 
-	gcc -o $(NAME) $(OBJ) $(SRC)
+	$(CC) -o $(NAME) $(OBJ) $(SRC)
