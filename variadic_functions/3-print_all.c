@@ -58,14 +58,14 @@ void print_all(const char * const format, ...)
 		{'i', print_int},
 		{'f', print_float},
 		{'s', print_string},
-		{'\0', NULL} 
+		{'\0', NULL}
 	};
 
 	va_start(list, format);
 	while (format != NULL && format[i] != '\0')
 	{
 		j = 0;
-		while(pik[j].let != '\0')
+		while (pik[j].let != '\0')
 		{
 			if (pik[j].let == format[j])
 			{
