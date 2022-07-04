@@ -1,5 +1,5 @@
 #Comentario para que que Betty no grite
 CC = gcc
-SRC = *.c
+SRC = holbertonschool-low_level_programming/makefiles/*.c
 all:
 	$(CC) -o school $(SRC)
