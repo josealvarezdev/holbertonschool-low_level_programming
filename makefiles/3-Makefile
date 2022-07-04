@@ -7,6 +7,7 @@ Magianegra: %.c m.h
 	$(CC) -c -o $@ $<
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
+	$(CC) $(OBJ) -o holberton
 clean:
 	$(RM) %.swp $(NAME)
 oclean:
