@@ -3,7 +3,7 @@
  * list_len - Count number of elements
  * @h: list pointer
  * Return: count
-*/ 
+*/
 
 size_t list_len(const list_t *h)
 {
