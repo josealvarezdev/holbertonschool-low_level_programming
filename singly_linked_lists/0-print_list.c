@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include "lists.h"
+/**
+* print_lists - Print lists dou
+* @h: list
+* Return: Count
+*/
 size_t print_list(const list_t *h)
 {
 int count = 0;
