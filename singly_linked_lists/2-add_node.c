@@ -6,17 +6,18 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-list_t *newlist;
-char *strcp = strdup(str);
+	list_t *newlist;
 
-list_t *newlist= malloc(sizeof(list_t));
+	newlist= malloc(sizeof(list_t));
 
-if (newlist != NULL)
-{
-	newlist->str = strcp;
-	newlist->len = strlen(strcp);
-	newlist->next = head;
-	head = newlist;
-}
-return (newlist);
+	if (!newlist)
+		return (NULL);
+	if (newlist != NULL)
+	{
+		newlist->str = strdup(strcp);
+		newlist->len = strlen(strcp);
+		newlist->next = head;
+		(*head) = newlist;
+	}
+return (*head);
 }
