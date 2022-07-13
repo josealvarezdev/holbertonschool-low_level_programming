@@ -7,6 +7,7 @@
 * add_node - agrega nodo al inicio
 * @head: head
 * @str: string
+* Return: head
 */
 list_t *add_node(list_t **head, const char *str)
 {
