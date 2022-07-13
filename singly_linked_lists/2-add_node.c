@@ -5,13 +5,11 @@
 #include <stdlib.h>
 
 list_t *add_node(list_t **head, const char *str)
-
+{
 char *newlist;
-char *strcp;
+char *strcp = strdup(str);
 
-strcp = strdup(str);
-
-list_t newlist= malloc(sizeof(list_t));
+list_t *newlist= malloc(sizeof(list_t));
 
 if (newlist != NULL)
 {
@@ -20,5 +18,5 @@ if (newlist != NULL)
 	newlist->next = head;
 	head = newlist;
 }
-return (new);
+return (newlist);
 }
