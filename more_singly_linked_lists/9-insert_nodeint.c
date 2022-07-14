@@ -13,13 +13,13 @@ listint_t newnode;
 unsigned int i = 0;
 unsigned int j = 0;
 
-post = *head;
-bef = *head;
 newnode = malloc(sizeof(listint_t));
 	if (!newnode)
 	{
 		return (NULL);
 	}
+post = *head;
+bef = *head;
 	while(i > idx)
 	{
 		post = post->next;
