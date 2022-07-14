@@ -9,7 +9,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 listint_t *post;
 listint_t *bef;
-listint_t newnode;
+listint_t *newnode;
 unsigned int i = 0;
 unsigned int j = 0;
 
