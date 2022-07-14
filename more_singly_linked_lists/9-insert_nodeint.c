@@ -34,7 +34,7 @@ newnode = malloc(sizeof(listint_t));
 	if (bef)
 		bef->next = newnode;
 	else
-		*head = newnode;
+		(*head) = newnode;
 
 	return (newnode);
 }
