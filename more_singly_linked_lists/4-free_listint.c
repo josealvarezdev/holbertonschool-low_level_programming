@@ -1,5 +1,9 @@
 #include "lists.h"
-
+/**
+ * free_listint - free
+ * @head: head
+ * Return: void
+*/
 void free_listint(listint_t *head)
 {
 {
@@ -8,7 +12,6 @@ void free_listint(listint_t *head)
 	while (head)
 	{
 		temp = head->next;
-		free(head->next);
 		free(head);
 		head = temp;
 	}
