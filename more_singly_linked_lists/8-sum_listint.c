@@ -14,8 +14,8 @@ int suma= 0;
 	}
 	while (head)
 	{
-		head = head->next;
 		suma += head->n;
+		head = head->next;
 	}
 return (suma);
 }
