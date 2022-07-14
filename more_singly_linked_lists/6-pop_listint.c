@@ -15,6 +15,6 @@ if (*head == NULL)
 }
 *head = p->next;
 k = p->n;
-free (p);
+free(p);
 return (k);
 }
