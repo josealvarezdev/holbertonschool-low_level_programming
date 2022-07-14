@@ -1,5 +1,10 @@
 #include "lists.h"
-
+/*
+ * add_nodeint - add node int
+ * @n: number
+ * @head: head
+ * Return: new *head
+ */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 listint_t *p;
