@@ -16,12 +16,12 @@ bef = *head;
 
 	while(i < idx)
 	{	
+		p = p->next;
 		if (!p)
 		{
 			return (NULL);
 		}
 		bef = p;
-		p = p->next;
 		i++;
 	}
 newnode = malloc(sizeof(listint_t));
