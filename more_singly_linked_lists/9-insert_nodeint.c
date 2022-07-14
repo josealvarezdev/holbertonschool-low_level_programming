@@ -14,14 +14,6 @@ unsigned int i = 0;
 p = *head;
 bef = *head;
 
-newnode = malloc(sizeof(listint_t));
-	if (!newnode)
-	{
-		return (NULL);
-	}
-	newnode->n = n;
-	newnode->next = p;
-
 	while(i < idx)
 	{	
 		if (!p)
@@ -32,6 +24,13 @@ newnode = malloc(sizeof(listint_t));
 		p = p->next;
 		i++;
 	}
+newnode = malloc(sizeof(listint_t));
+	if (!newnode)
+	{
+		return (NULL);
+	}
+	newnode->n = n;
+	newnode->next = p;
 	if (bef)
 		bef->next = newnode;
 	else
