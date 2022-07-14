@@ -19,7 +19,7 @@ if (!newnode)
 newnode->n = n;
 newnode->next = NULL;
 
-	if ((*head) = NULL)
+	if (*head == NULL)
 	{
 		*head = newnode;
 		return (*head);
