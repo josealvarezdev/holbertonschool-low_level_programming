@@ -15,7 +15,7 @@ int suma= 0;
 	while (head)
 	{
 		head = head->next;
-		suma += n;
+		suma += head->n;
 	}
 return (suma);
 }
