@@ -8,8 +8,10 @@ int sum_listint(listint_t *head)
 {
 int suma= 0;
 
-if (!head)
-	return (0);
+	if (!head)
+	{
+		return (0);
+	}
 	while (head)
 	{
 		head = head->next;
