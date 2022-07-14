@@ -24,7 +24,7 @@ newnode->next = NULL;
 		*head = newnode;
 		return (*head);
 	}
-	while (aux != NULL && aux->next != NULL)\
+	while (aux != NULL && aux->next != NULL)
 	{
 		aux = aux->next;
 	}
