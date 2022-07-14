@@ -10,7 +10,7 @@ p = malloc(sizeof(listint_t));
 		return (NULL);
 	if (p != NULL)
 	{
-		p->n = n
+		p->n = n;
 		p->next = (*head);
 		(*head) = p;
 	}
