@@ -1,5 +1,5 @@
 #include "lists.h"
-/*
+/**
  * add_nodeint - agrega un nodo int al inicio
  * @n: number
  * @head: head
