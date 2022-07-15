@@ -15,7 +15,7 @@ unsigned int i = 0;
 	return (NULL);
 	}
 
-next = *head;
+p = *head;
 	while(i < idx)
 	{	
 		if (!p)
