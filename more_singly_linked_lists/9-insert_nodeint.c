@@ -3,7 +3,8 @@
  * insert_nodeint_at_index - inserta nodo en el lugar del index
  * @head: pointer to pointer
  * @idx: position to ad newnode
- * Return: coso
+ * @n: number
+ *Return: coso
 */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
