@@ -34,6 +34,6 @@ unsigned int idx = 0;
 aft = tmp->next;
 tmp->next = aft->next;
 
-free(prev);
+free(aft);
 return (1);
 }
