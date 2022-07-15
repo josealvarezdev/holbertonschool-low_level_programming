@@ -24,7 +24,7 @@ afterp->n = n;
 	}
 	while (idx > 1)
 	{
-		p = p->next
+		p = p->next;
 		idx--;
 	}
 	if (p == NULL)
