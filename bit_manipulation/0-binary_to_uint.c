@@ -24,10 +24,10 @@ if (!b)
 	}
 	for (i = 0; b[i] != '\0'; i++)
 	{
-		res *=2;
+		res *= 2;
 			if (b[i] == '1')
 			{
-				res +=1;
+				res += 1;
 			}
 	}
 return (res);
