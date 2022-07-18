@@ -14,7 +14,7 @@ int i, flag = 0;
 		_putchar ('0');
 		return;
 	}
-	for (i = 31; i >= 0; i--)
+	for (i = 63; i >= 0; i--)
 	{
 		res = n >> i;
 
