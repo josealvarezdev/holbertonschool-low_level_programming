@@ -6,9 +6,9 @@
  */
 void print_binary(unsigned long int n)
 {
-unsigned long int i = 63, res = 0;
+unsigned long int i, res = 0;
 
-	for (; i >= 0; i--)
+	for (i = 63; i >= 0; i--)
 	{
 		res = n >> i;
 
