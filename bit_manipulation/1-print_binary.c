@@ -18,7 +18,7 @@ int i, flag = 0;
 	{
 		res = n >> i;
 
-		if ( res & 1)
+		if (res & 1)
 		{
 			_putchar ('1');
 			flag++;
