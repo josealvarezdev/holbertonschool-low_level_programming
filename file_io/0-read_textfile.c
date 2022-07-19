@@ -18,17 +18,17 @@ op = open(filename, O_RDONLY);
 
 	if (op == -1)
 	{
-		free (st);
+		free(st);
 		return (0);
 	}
 rd = read(op, st, letters);
 	if (rd == -1)
-		{
-			free(st);
-			return (0);
-		}
+	{
+		free(st);
+		return (0);
+	}
 wr = write(STDOUT_FILENO, st, rd);
-	
+
 	if (wr == -1)
 	{
 		free(st);
