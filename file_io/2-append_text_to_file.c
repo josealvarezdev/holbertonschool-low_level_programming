@@ -12,7 +12,7 @@ int cr, wr;
 	if (filename == NULL)
 		return (-1);
 
-	cr = open(filename, O_CREAT | O_RDWR | O_TRUNC | O_APPEND, 0600);
+	cr = open(filename, O_RDWR | O_APPEND);
 
 	if (cr == -1)
 		return (-1);
