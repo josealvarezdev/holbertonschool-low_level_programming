@@ -21,8 +21,7 @@ op = open(filename, O_RDONLY);
 		free (st);
 		return (0);
 	}
-
-rd = (op, st, letters);
+rd = read(op, st, letters);
 	if (rd == -1)
 		{
 			free(st);
