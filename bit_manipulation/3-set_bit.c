@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+ * set_bit - Sets the value of a bit
+ * @n: pointer
+ * @index: bit
+ * Return: -1 if error or 1 if success
+ */
 int set_bit(unsigned long int *n, unsigned int index)
 {
 	if (index > 63)
