@@ -21,14 +21,14 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	fdir_from = open(file_from, O_RDONLY, 0664);
+	fdir_from = open(argv[1], O_RDONLY, 0664);
 
 	if (argv[1] < 0)
 	{
 		dprintf(STERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
 		exit(98);
 	}
-	fdir_to = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	fdir_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (argv[2] < 1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
