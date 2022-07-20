@@ -5,7 +5,7 @@
  * @argv: pointer argv
  * Return: Return 0 if successful, otherwise return error code
  */
-int main(int argc, char *argv)
+int main(int argc, char **argv[])
 {
     char file_from, file_to, *buffer;
     int fdir_from, fdir_to, rd;
