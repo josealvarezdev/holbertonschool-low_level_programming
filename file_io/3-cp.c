@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
 {
 	char *buffer;
 	int cl1, cl2, fdir_from, fdir_to, rd;
+
 	buffer = malloc(1024);
 	if (!buffer)
 		return (-1);
