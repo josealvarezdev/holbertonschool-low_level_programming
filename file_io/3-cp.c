@@ -45,12 +45,12 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	if (close(file_from) < 0)
+	if ((close(file_from)) < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdir_from);
 		exit(100);
 	}
-	if (close(file_to) < 0);
+	if ((close(file_to)) < 0);
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdir_to);
 		exit(100);
