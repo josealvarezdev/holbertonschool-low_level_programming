@@ -7,20 +7,16 @@
  */
 int main(int argc, char *argv[])
 {
-	int cl1, cl2;
 	char *buffer;
-	int fdir_from, fdir_to, rd;
-
+	int cl1, cl2, fdir_from, fdir_to, rd;
 	buffer = malloc(1024);
 	if (!buffer)
 		return (-1);
-
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	}
 	fdir_from = open(argv[1], O_RDONLY, 0664);
-
 	if (fdir_from < 0)
 	{
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
