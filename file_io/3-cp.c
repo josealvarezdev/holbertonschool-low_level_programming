@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 
 	if (argv[1] == -1)
 	{
-		dprintf(STERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
+		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
 		exit(98);
 	}
 	fdir_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
