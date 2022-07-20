@@ -7,11 +7,11 @@
  */
 int main(int argc, char *argv[])
 {
-	char file_from, file_to, *buffer;
+	char *file_from, *file_to, *buffer;
 	int fdir_from, fdir_to, rd;
 
 	
-	buffer = malloc(1024 * sizeof(char));
+	buffer = malloc(1024);
 	if (!buffer)
 		return (-1);
 
