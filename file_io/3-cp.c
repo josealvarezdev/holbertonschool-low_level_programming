@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
 	if (fdir_from < 0)
 	{
-dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
 	}
 	fdir_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	while ((rd = read(fdir_from, buffer, 1024)) > 0)
@@ -36,7 +36,7 @@ dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
 	}
 	if (rd < 0)
 	{
-dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
 	}
 	cl1 = close(fdir_from);
 	if (cl1 < 0)
