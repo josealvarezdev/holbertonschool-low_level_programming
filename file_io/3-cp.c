@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	fdir_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	while (buffer == 1024)
+	while ((r = read(fdir_from, buffer, 1024)) > 0)
 	{
 		rd = read(fdir_from, buffer, 1024);
 		if (fdir_to < 0 || (write(fdir_to, buffer, rd) != rd))
