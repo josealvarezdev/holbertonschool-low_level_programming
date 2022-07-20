@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	}
 	fdir_from = open(argv[1], O_RDONLY, 0664);
 
-	if (argv[1] < 0)
+	if (argv[1] == -1)
 	{
 		dprintf(STERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
 		exit(98);
