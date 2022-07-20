@@ -7,7 +7,8 @@
  */
 int main(int argc, char *argv[])
 {
-	char *file_from, *file_to, *buffer;
+	int file_from, file_to; 
+	char *buffer;
 	int fdir_from, fdir_to, rd;
 
 	
