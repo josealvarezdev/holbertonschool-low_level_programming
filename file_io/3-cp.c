@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 	cl2 = close(fdir_to);
-	if (cl2 < 0);
+	if (cl2 < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdir_to);
 		exit(100);
