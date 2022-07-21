@@ -8,16 +8,12 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 int count = 0;
-const dlistint_t *p = h;
 
-for (; p; p = p->next)
+while (h)
 {
-if (p->n)
-{
-printf("%d", p->n);
-}
 count++;
-putchar(10);
+printf("%d", h->n);
+h->next;
 }
 return (count);
 }
