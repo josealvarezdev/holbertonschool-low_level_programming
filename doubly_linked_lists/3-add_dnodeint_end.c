@@ -29,5 +29,6 @@ newnode->prev = NULL;
 		aux = aux->next;
 	}
 	aux->next = newnode;
+	newnode->prev = aux;
 	return (*head);
 }
