@@ -19,6 +19,5 @@ count++;
 }
 putchar(10);
 }
-count++;
 return (count);
 }
