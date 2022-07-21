@@ -13,11 +13,17 @@ p = malloc(sizeof(dlistint_t));
 
 	if (!p)
 		return (NULL);
-	if (p != NULL)
+	p->n = n;
+	p->prev = NULL;
+	if (*head)
 	{
-		p->n = n;
-		p->next = (*head);
-		(*head) = p;
+		(*head)->prev = p;
+		p->next = *head;
 	}
-return (*head);
+	else
+	{
+		p->next = NULL;
+	}
+	*head = p;
+	return (*head);
 }
