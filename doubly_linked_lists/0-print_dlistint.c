@@ -14,7 +14,7 @@ for (; p; p = p->next)
 {
 if (p->n)
 {
-printf("%u, p->n");
+printf("%d, p->n");
 }
 putchar(10);
 }
