@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
-* print_listint - Print lists dou
+* print_dlistint - Print lists dou
 * @h: list
 * Return: Count
 */
@@ -12,7 +12,7 @@ const dlistint_t *p = h;
 
 for (; p; p = p->next)
 {
-if (p->n)
+if (p)
 {
 printf("%d\n", p->n);
 }
