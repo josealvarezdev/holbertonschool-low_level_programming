@@ -1,19 +1,23 @@
 #include <stdio.h>
 #include "lists.h"
 /**
-* print_dlistint - Print lists dou
+* print_listint - Print lists dou
 * @h: list
 * Return: Count
 */
-size_t print_dlistint(const dlistint_t *h)
+size_t dlistint_len(const dlistint_t *h)
 {
 int count = 0;
+const listint_t *p = h;
 
-while (h)
+for (; p; p = p->next)
 {
+if (p->n)
+{
+printf("%d", p->n);
+}
 count++;
-printf("%d", h->n);
-h->next;
+putchar(10);
 }
 return (count);
 }
