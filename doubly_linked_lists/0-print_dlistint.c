@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
-* print_list - Print lists dou
+* print_dlistint - Print lists dou
 * @h: list
 * Return: Count
 */
