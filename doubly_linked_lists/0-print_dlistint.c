@@ -12,15 +12,10 @@ const dlistint_t *p = h;
 
 for (; p; p = p->next)
 {
-if (p->str)
+if (p->n)
 {
-printf("[%u] %s", p->len, p->str);
+printf("%d, p->n");
 }
-else
-{
-printf("[0] (nil)");
-}
-count++;
 putchar(10);
 }
 return (count);
