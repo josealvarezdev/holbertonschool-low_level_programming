@@ -14,10 +14,9 @@ for (; p; p = p->next)
 {
 if (p->n)
 {
-printf("%d", p->n);
+printf("%d\n", p->n);
 }
 count++;
-putchar(10);
 }
 return (count);
 }
