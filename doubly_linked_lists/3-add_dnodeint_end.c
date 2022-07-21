@@ -11,7 +11,7 @@ dlistint_t *newnode;
 dlistint_t *aux;
 
 aux = (*head);
-newnode = malloc(sizeof(listint_t));
+newnode = malloc(sizeof(dlistint_t));
 
 if (!newnode)
 	return (NULL);
