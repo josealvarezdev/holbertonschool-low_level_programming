@@ -5,7 +5,7 @@
 * @h: list
 * Return: Count
 */
-size_t dlistint_len(const dlistint_t *h)
+size_t print_dlistint(const dlistint_t *h)
 {
 int count = 0;
 const dlistint_t *p = h;
