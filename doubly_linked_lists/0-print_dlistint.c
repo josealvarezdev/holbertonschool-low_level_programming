@@ -15,6 +15,7 @@ for (; p; p = p->next)
 if (p->n)
 {
 printf("%d", p->n);
+count++;
 }
 putchar(10);
 }
