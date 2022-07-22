@@ -13,7 +13,7 @@ dlistint_t *newnode = NULL, *bef = *h, *sig;
 unsigned int i = 0;
 
 	if (idx == 0 || !(*h) || h)
-		return (add_ndodeint(h, n));
+		return (add_dnodeint(h, n));
 	while (bef && i < (idx - 1))
 	{
 		bef = bef->next;
