@@ -31,9 +31,11 @@ unsigned int idx = 0;
 	{
 		return (-1);
 	}
-aft = tmp->next;
-tmp->next->prev = aft->next;
+tmp = after->prev;
+tmp->next = after->next;
+after->next->prev = tmp;
 
 free(aft);
+after = NULL;
 return (1);
 }
