@@ -36,6 +36,6 @@ tmp->next = aft->next;
 aft->next->prev = tmp;
 
 free(aft);
-after = NULL;
+aft = NULL;
 return (1);
 }
