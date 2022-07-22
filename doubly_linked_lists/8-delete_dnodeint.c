@@ -27,10 +27,10 @@ unsigned int idx = 0;
 	{
 		tmp = tmp->next;
 		idx++;
-	}
 	if (!tmp || !(tmp->next))
 	{
 		return (-1);
+	}
 	}
 aft = tmp->next;
 tmp = aft->prev;
