@@ -28,11 +28,10 @@ dlistint_t *new, *next, *prev = NULL;
 		return (NULL);
 	new->n = n;
 	new->next = next;
-	new->prev = prev;
 	if (prev)
 		prev->next = new;
+		new->prev = prev;
 	else
 		*h = new;
-new->prev = prev;
 	return (new);
 }
