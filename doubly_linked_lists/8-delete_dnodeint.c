@@ -23,10 +23,10 @@ dlistint_t *aft;
 	}
 	for (; index != 0; index--)
 	{
-		tmp = tmp->next;
-		if (!tmp || !(tmp->next))
+		*head = tmp->next;
+		if (*head != NULL)
 		{
-			return (-1);
+			(*head)->prev = NULL;
 		}
 	}
 aft = tmp->next;
