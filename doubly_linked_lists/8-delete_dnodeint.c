@@ -31,9 +31,9 @@ unsigned int idx = 0;
 	{
 		return (-1);
 	}
-tmp = after->prev;
-tmp->next = after->next;
-after->next->prev = tmp;
+tmp = aft->prev;
+tmp->next = aft->next;
+aft->next->prev = tmp;
 
 free(aft);
 after = NULL;
