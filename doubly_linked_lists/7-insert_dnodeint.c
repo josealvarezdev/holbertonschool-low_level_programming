@@ -23,7 +23,7 @@ unsigned int i = 0;
 		return(NULL);
 
 	if (bef->next == NULL)
-		return (add_dnode_end(h, n));
+		return (add_dnodeint_end(h, n));
 
 	newnode = malloc(sizeof(dlistint_t));
 	if (!newnode)
