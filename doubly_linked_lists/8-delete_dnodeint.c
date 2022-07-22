@@ -23,11 +23,9 @@ dlistint_t *aft;
 	}
 	for (; index != 0; index--)
 	{
-		*head = tmp->next;
-		if (*head != NULL)
-		{
-			(*head)->prev = NULL;
-		}
+		if (tmp == NULL)
+			return (-1);
+	tmp = tmp->next;
 	}
 aft = tmp->next;
 tmp = aft->prev;
