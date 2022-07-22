@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
 /**
 * insert_dnodeint_at_index - insert a new node in a given position
 * @h: head
