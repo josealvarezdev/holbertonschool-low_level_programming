@@ -31,7 +31,6 @@ dlistint_t *new, *next, *prev = NULL;
 	if (prev)
 	{
 		prev->next = new;
-		new->prev = prev;
 	}
 	else
 		*h = new;
