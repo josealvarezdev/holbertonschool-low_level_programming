@@ -20,6 +20,7 @@ unsigned int idx = 0;
 	{
 		*head = tmp->next;
 		free(tmp);
+		head->prev = NULL;
 		return (1);
 	}
 	while (tmp && idx < index - 1)
