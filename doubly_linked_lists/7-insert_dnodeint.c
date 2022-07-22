@@ -8,7 +8,7 @@
 */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-listint_t *new, *next, *prev = NULL;
+dlistint_t *new, *next, *prev = NULL;
 	unsigned int i;
 
 	if (!head)
