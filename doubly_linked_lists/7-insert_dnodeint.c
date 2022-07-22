@@ -33,6 +33,7 @@ unsigned int i = 0;
 	sig = bef->next;
 	sig->prev = newnode;
 	bef->next = newnode;
+	bef->next->prev = newnode;
 	newnode->prev = bef;
 	newnode->next = sig;
 	return (newnode);
