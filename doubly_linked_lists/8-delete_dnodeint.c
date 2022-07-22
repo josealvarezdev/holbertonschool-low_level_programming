@@ -31,6 +31,7 @@ unsigned int idx = 0;
 	{
 		return (-1);
 	}
+aft = tmp->next;
 tmp = aft->prev;
 tmp->next = aft->next;
 aft->next->prev = tmp;
