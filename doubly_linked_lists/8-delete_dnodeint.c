@@ -32,8 +32,7 @@ unsigned int idx = 0;
 		return (-1);
 	}
 aft = tmp->next;
-tmp->next = aft->next;
-aft->prev = tmp;
+tmp->next->prev = aft->next;
 
 free(aft);
 return (1);
