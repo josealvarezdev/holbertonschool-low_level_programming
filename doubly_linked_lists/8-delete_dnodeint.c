@@ -33,6 +33,7 @@ unsigned int idx = 0;
 	}
 aft = tmp->next;
 tmp->next = aft->next;
+aft->prev = tmp;
 
 free(aft);
 return (1);
