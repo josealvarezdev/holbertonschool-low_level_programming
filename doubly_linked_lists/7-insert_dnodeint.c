@@ -29,9 +29,12 @@ dlistint_t *new, *next, *prev = NULL;
 	new->n = n;
 	new->next = next;
 	if (prev)
+	{
 		prev->next = new;
 		new->prev = prev;
+	}
 	else
 		*h = new;
+
 	return (new);
 }
