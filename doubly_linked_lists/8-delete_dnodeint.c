@@ -23,9 +23,6 @@ unsigned int idx = 0;
 		(*head)->prev = NULL;
 		return (1);
 	}
-	if (index < 0)
-		return (-1);
-
 	while (tmp && idx < index - 1)
 	{
 		tmp = tmp->next;
