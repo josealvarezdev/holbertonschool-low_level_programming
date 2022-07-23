@@ -8,30 +8,44 @@
 */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *newnode, *bef = *h;
+dlistint_t *newelement, *pr;
+	unsigned int i = 0;
 
-	if (idx == 0)
-		return (add_dnodeint(h, n));
-
-	for (; idx != 1; idx--)
+	pr = *h;
+	newelement = malloc(sizeof(dlistint_t));
+	if (newelement == NULL)
 	{
-		bef = bef->next;
-		if (bef == NULL)
+		free(newelement);
 		return (NULL);
 	}
-
-	if (bef->next == NULL)
-		return (add_dnodeint_end(h, n));
-
-	newnode = malloc(sizeof(dlistint_t));
-	if (newnode == NULL)
+	newelement->n = n;
+	if (*h == NULL)
+	{
+		*h = newelement;
+		newelement->next = newelement->prev = NULL;
+		return (newelement);
+	} else if (idx == 0)
+	{
+		add_dnodeint(h, n);
+		return (newelement);
+	}
+	while ((pr->next != NULL) && (i + 1 != idx))
+	{
+		pr = pr->next;
+		i++;
+	}
+	if ((pr->next == NULL) && (idx > i + 1))
+	{
 		return (NULL);
+	} else if (pr->next == NULL)
+	{
+		add_dnodeint_end(h, n);
+		return (newelement);
+	}
+	newelement->next = pr->next;
+	newelement->prev = pr->next->prev;
+	pr->next->prev = newelement;
+	pr->next = newelement;
 
-	newnode->n = n;
-	newnode->prev = bef;
-	newnode->next = bef->next;
-	bef->next->prev = newnode;
-	bef->next = newnode;
-
-	return (newnode);
+	return (newelement);
 }
