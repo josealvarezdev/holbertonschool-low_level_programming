@@ -1,4 +1,10 @@
 #include "hash_tables.h"
+/**
+ * hash_table_get - obtain a value associated with a specific key
+ * @ht: table
+ * @key: key
+ * Return: Return specific value associeted otherwise NULL
+*/
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int i;
@@ -14,8 +20,8 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 			if (strcmp(p->key, strdup(key)) == 0)
 			{
 				return (p->value);
-		       	}
-			p  = p-> next;
+			}
+			p = p->next;
 		}
 	}
 	return (NULL);
