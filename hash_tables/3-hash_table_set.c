@@ -7,7 +7,6 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *node;
-	hash_node_t *actual;
 	unsigned long int key_indexx;
 	key_indexx = key_index((unsigned char *)key, ht->size);
 	node = malloc(sizeof(hash_node_t));
@@ -23,9 +22,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	else
 	{
-	actual = (ht->array)[key_indexx];
-	node->next = actual;
-	actual = node;
+	node->next = (ht->array)[key_indexx];
+    (ht->array)[key_indexx] = node;
 	}
 	return (1);
 }
