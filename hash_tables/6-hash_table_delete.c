@@ -4,7 +4,7 @@
  * @ht: table
  * Return: if ht dosent exist dont print
 */
-void hash_table_print(const hash_table_t *ht)
+void hash_table_delete(hash_table_t *ht)
 {
 	unsigned long int i;
 	hash_node_t *p;
@@ -24,4 +24,4 @@ void hash_table_print(const hash_table_t *ht)
 	}
 	free(ht->array);
     free(ht);
-}
+}s
