@@ -1,6 +1,6 @@
-#include "hash_tables.h"
+ #include "hash_tables.h"
 /**
- * hash_table_print - print hash table
+ * hash_table_delete - print hash table
  * @ht: table
  * Return: if ht dosent exist dont print
 */
@@ -16,13 +16,13 @@ void hash_table_delete(hash_table_t *ht)
 		p = ht->array[i];
 		while (p)
 		{
-            tmp = p->next; 
-            free(p->key);
-            free(p->value);
-            free(p);
-            p = tmp; 
+			tmp = p->next;
+			free(p->key);
+			free(p->value);
+			free(p);
+			p  = tmp;
 		}
 	}
-    free(ht->array);
-    free(ht);
+	free(ht->array);
+	free(ht);
 }
