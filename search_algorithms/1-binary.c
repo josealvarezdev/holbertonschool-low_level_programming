@@ -1,6 +1,9 @@
 #include "search_algos.h"
 /**
  * print_array - print array
+ * @array: array
+ * @b: start
+ * @e: end
 */
 void print_array(int *array, int b, int e)
 {
